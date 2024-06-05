@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cancel Media Format &mdash; SCR SDK Python Documentation 1.11.0 (Beta)  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Shutter Half Release" href="s1-and-release.html" />
+    <link rel="prev" title="Movie Record" href="movie-record.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            SCR SDK Python Documentation 1.11.0 (Beta)
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quick-start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../setup/software_installation.html">Software Installation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Downloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../downloads/downloads.html">Downloads</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api/commands.html">Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/properties.html">Properties</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Samples</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../init-library.html">Initialise the Camera Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../helper-commands/index.html">Helper Commands</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Commands</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="release.html">Shutter Release</a></li>
+<li class="toctree-l2"><a class="reference internal" href="media-format.html">Media Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="media-quick-format.html">Media Quick Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="movie-record.html">Movie Record</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Cancel Media Format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#running-the-sample">Running the Sample</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="s1-and-release.html">Shutter Half Release</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cancel-contents-transfer.html">Cancel Contents Transfer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="camera-settings-reset.html">Camera Settings Reset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apsc-or-full.html">APS-C or Full Switching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="movie-rec-button-toggle.html">Movie Record Button Toggle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cancel-remote-touch-operation.html">Cancel Remote Touch Operation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="picture-profile-reset.html">Picture Profile Reset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creative-look-reset.html">Creative Look Reset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pixel-mapping.html">Pixel Mapping</a></li>
+<li class="toctree-l2"><a class="reference internal" href="time-code-preset-reset.html">Time Code Preset Reset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user-bit-preset-reset.html">User Bit Preset Reset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sensor-cleaning.html">Sensor Cleaning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="power-off.html">Power Off</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../properties/index.html">Properties</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Release Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../release_notes/1.11.0.html">SDK Version 1.11.0</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SCR SDK Python Documentation 1.11.0 (Beta)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Commands</a></li>
+      <li class="breadcrumb-item active">Cancel Media Format</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/python/commands/cancel-media-format.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="cancel-media-format">
+<h1>Cancel Media Format<a class="headerlink" href="#cancel-media-format" title="Permalink to this headline"></a></h1>
+<p>The Cancel Media Format command can be issued on a connected camera using the cancel_media_format_down() and cancel_media_format_up() methods.</p>
+<p>In the Camera Remote SDK, the API call to issue a command for cancel_media_format up/down is <a class="reference external" href="../../_static/rcsdk_api.pdf#page=109">SendCommand</a> .</p>
+<p>Details about the Cancel Media Format can be found at <a class="reference external" href="../../_static/rcsdk_api.pdf#page=224">CancelMediaFormat</a></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sony_cr</span>
+<span class="kn">import</span> <span class="nn">io</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="n">cm</span> <span class="o">=</span> <span class="n">sony_cr</span><span class="o">.</span><span class="n">CameraManager</span><span class="p">()</span>
+
+<span class="n">cameras</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">find_cameras</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Found </span><span class="si">{}</span><span class="s2"> camera(s)&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">cameras</span><span class="p">)))</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">cam</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">cameras</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;[</span><span class="si">{}</span><span class="s2">]: </span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">cam</span><span class="p">[</span><span class="s1">&#39;model&#39;</span><span class="p">],</span> <span class="n">cam</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]))</span>
+
+<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">cameras</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="n">cam</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">get_camera</span><span class="p">(</span><span class="n">cameras</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">])</span>
+
+<span class="n">cam</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+
+<span class="n">cam</span><span class="o">.</span><span class="n">media_format_slot1</span><span class="p">()</span>
+
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">cam</span><span class="o">.</span><span class="n">cancel_media_format_down</span><span class="p">()</span>
+<span class="n">cam</span><span class="o">.</span><span class="n">cancel_media_format_up</span><span class="p">()</span>
+
+<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<section id="running-the-sample">
+<h2>Running the Sample<a class="headerlink" href="#running-the-sample" title="Permalink to this headline"></a></h2>
+<p>Copy the code snippet above into a file called cancel-media_format.py and execute using the command:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python cancel-media-format.py</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="movie-record.html" class="btn btn-neutral float-left" title="Movie Record" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="s1-and-release.html" class="btn btn-neutral float-right" title="Shutter Half Release" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Sony Europe B.V.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Start &mdash; SCR SDK Python Documentation 1.11.0 (Beta)  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Software Installation" href="setup/software_installation.html" />
+    <link rel="prev" title="Overview" href="overview.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            SCR SDK Python Documentation 1.11.0 (Beta)
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Start</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-1-connect-the-camera-to-a-pc-using-usb-c-cable">Step 1 - Connect the Camera to a PC using USB-C cable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-2-set-pc-remote-function-to-on">Step 2 - Set PC Remote Function to On</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-3-install-the-required-libraries-on-your-pc">Step 3 - Install the required libraries on Your PC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-4-run-the-capture-image-sample">Step 4 - Run the Capture Image Sample</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="setup/software_installation.html">Software Installation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Downloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="downloads/downloads.html">Downloads</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/commands.html">Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/properties.html">Properties</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Samples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="python/init-library.html">Initialise the Camera Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python/helper-commands/index.html">Helper Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python/commands/index.html">Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="python/properties/index.html">Properties</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Release Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="release_notes/1.11.0.html">SDK Version 1.11.0</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SCR SDK Python Documentation 1.11.0 (Beta)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Quick Start</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/quick-start.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="quick-start">
+<h1>Quick Start<a class="headerlink" href="#quick-start" title="Permalink to this headline"></a></h1>
+<p>The Quick start guide gives you the steps you need to quickly connect the camera to your PC and install the required software to start developing against the Python version of the SCR SDK.</p>
+<section id="step-1-connect-the-camera-to-a-pc-using-usb-c-cable">
+<h2>Step 1 - Connect the Camera to a PC using USB-C cable<a class="headerlink" href="#step-1-connect-the-camera-to-a-pc-using-usb-c-cable" title="Permalink to this headline"></a></h2>
+<a class="reference internal image-reference" href="_images/side-usb.png"><img alt="_images/side-usb.png" src="_images/side-usb.png" style="width: 349.05px; height: 321.3px;" /></a>
+</section>
+<section id="step-2-set-pc-remote-function-to-on">
+<h2>Step 2 - Set PC Remote Function to On<a class="headerlink" href="#step-2-set-pc-remote-function-to-on" title="Permalink to this headline"></a></h2>
+<a class="reference internal image-reference" href="_images/back.png"><img alt="_images/back.png" src="_images/back.png" style="width: 371.0px; height: 276.0px;" /></a>
+</section>
+<section id="step-3-install-the-required-libraries-on-your-pc">
+<h2>Step 3 - Install the required libraries on Your PC<a class="headerlink" href="#step-3-install-the-required-libraries-on-your-pc" title="Permalink to this headline"></a></h2>
+<p>To use the Python version of the SDK, you need to install Python and the pip package manager. Please see <a class="reference internal" href="setup/software_installation.html"><span class="doc">Software Installation</span></a> for details on installing this for your platform.</p>
+</section>
+<section id="step-4-run-the-capture-image-sample">
+<h2>Step 4 - Run the Capture Image Sample<a class="headerlink" href="#step-4-run-the-capture-image-sample" title="Permalink to this headline"></a></h2>
+<p>Now that you have the required dependencies to try the samples. You can start with taking a picture. <a class="reference internal" href="python/helper-commands/capture-image.html"><span class="doc">Capture an Image</span></a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="overview.html" class="btn btn-neutral float-left" title="Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="setup/software_installation.html" class="btn btn-neutral float-right" title="Software Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Sony Europe B.V.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

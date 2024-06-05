@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Properties &mdash; SCR SDK Python Documentation 1.11.0 (Beta)  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Initialise the Camera Library" href="../python/init-library.html" />
+    <link rel="prev" title="Commands" href="commands.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            SCR SDK Python Documentation 1.11.0 (Beta)
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quick-start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../setup/software_installation.html">Software Installation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Downloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../downloads/downloads.html">Downloads</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="commands.html">Commands</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Properties</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Samples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../python/init-library.html">Initialise the Camera Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/helper-commands/index.html">Helper Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/commands/index.html">Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python/properties/index.html">Properties</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Release Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../release_notes/1.11.0.html">SDK Version 1.11.0</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SCR SDK Python Documentation 1.11.0 (Beta)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Properties</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/api/properties.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="properties">
+<h1>Properties<a class="headerlink" href="#properties" title="Permalink to this headline"></a></h1>
+<p>See Samples/<a class="reference internal" href="../python/properties/index.html"><span class="doc">Properties</span></a> for usage examples.</p>
+<p>Here is the list of the currently supported properties for the python library.
+For the full list of properties, please see <a class="reference external" href="../_static/rcsdk_api.pdf#page=26">function list</a>.</p>
+<p>Please note that when the table provides the link to the possible parameters of properties,
+the ‘CrDeviceProperty_’ or ‘Cr[parameter-name]_’ prefixes should not be used. It been removed from the code for the sake of simplicity.</p>
+<hr class="docutils" />
+<table class="colwidths-given docutils align-default">
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 69%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property Name</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Get/Set?</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>S1</p></td>
+<td><p>The Shutter Half Release property with the following parameters: Lock/Unlock.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>AEL</p></td>
+<td><p>The AE Lock Indicator property with the following parameters: Lock/Unlock.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>FEL</p></td>
+<td><p>The FEL Lock Indicator property with the following parameters: Lock/Unlock.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>AWBL</p></td>
+<td><p>The AWB Lock Indicator property with the following parameters: Lock/Unlock.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>FNumber</p></td>
+<td><p>The current aperture value in the format ‘F-Number’ or ‘Nothing/Unknown’ eg. F-9.5.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>ExposureBiasCompensation</p></td>
+<td><p>The Exposure Bias Compensation property in the format ‘-5.0Ev’ or similar from possible values.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>FlashCompensation</p></td>
+<td><p>The Flash Compensation property in the format ‘-5.0Ev’ or similar from possible values.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>ShutterSpeed</p></td>
+<td><p>The Shutter Speed property in the format ‘1.5”’, ‘1/10’, ‘1/1000’ etc. or ‘Bulb/Nothing’.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>IsoSensitivity</p></td>
+<td><p>The ISO Sensitivity property in the format ‘100’, ‘320’ or similar from possible values.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>ExposureProgramMode</p></td>
+<td><p>The Exposure Program mode property. It has many possible values, all of which are listed <a class="reference external" href="../_static/rcsdk_api.pdf#page=187">on page 187</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>FileType</p></td>
+<td><p>The File Type property in the format ‘JPEG’ or the following: RAW+JPEG, JPEG, RAW, RAW+HEIF and HEIF.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>JpegQuality</p></td>
+<td><p>The Jpeg Quality property with the following parameters: Light, Standard, Fine, Extra fine.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>WhiteBalance</p></td>
+<td><p>The White Balance property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=190">on page 190</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>FocusMode</p></td>
+<td><p>The Focus Mode property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=191">on page 191</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>MeteringMode</p></td>
+<td><p>The Metering Mode property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=191">on page 191</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>FlashMode</p></td>
+<td><p>The Flash Mode property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=191">on page 191</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>WirelessFlash</p></td>
+<td><p>The Wireless Flash property with the following parameters: On/Off.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>RedEyeReduction</p></td>
+<td><p>The Red Eye Reduction property with the following parameters: On/Off.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>DriveMode</p></td>
+<td><p>The Drive Mode property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=192">on page 192</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>DRO</p></td>
+<td><p>The Dynamic Range Optimizer property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=196">on page 196</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>ImageSize</p></td>
+<td><p>The Aspect Ratio property with the following parameters: L, M, S, VGA.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>AspectRatio</p></td>
+<td><p>The Aspect Ratio property with the following parameters: 3:2, 16:9, 4:3, 1:1.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>FocusArea</p></td>
+<td><p>The Focus Area property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=187">on page 187</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>LiveViewDisplayEffect</p></td>
+<td><p>The Live View Display Effect property from the following: Unknown, ON, OFF.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>StillImageStoreDestination</p></td>
+<td><p>The Still Image Save Destination property with the following parameters: HostPC, MemoryCard, HostPCAndMemoryCard. See more <a class="reference external" href="../_static/rcsdk_api.pdf#page=200">on page 200</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>PriorityKeySettings</p></td>
+<td><p>The Priority Key Settings property with the following parameters: CameraPosition, PCRemote. See more <a class="reference external" href="../_static/rcsdk_api.pdf#page=200">on page 200</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>DateTime_Settings</p></td>
+<td><p>The Date Time Settings property in 64 bit UNIX time format. See more <a class="reference external" href="../_static/rcsdk_api.pdf#page=203">on page 203</a>. It is a get/set property</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>NearFar</p></td>
+<td><p>The Near/Far Enable property with the following parameters: Enable/Disable.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>AF_Area_Position</p></td>
+<td><p>The AF Area Position property. It is a set of int coordinates for the x and y position. See more <a class="reference external" href="../_static/rcsdk_api.pdf#page=204">on page 204</a>.</p></td>
+<td><p>Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>Zoom_Setting</p></td>
+<td><p>The Zoom Setting property with the following parameters: OpticalZoomOnly, SmartZoomOnly, On_ClearImageZoom, On_DigitalZoom.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>Zoom_Operation</p></td>
+<td><p>The Zoom Operation property. You can change the zoom by specifying a positive or negative value to begin zooming in/out, and then stopping using ‘0’. See more <a class="reference external" href="../_static/rcsdk_api.pdf#page=205">on page 205</a>.</p></td>
+<td><p>Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>Movie_File_Format</p></td>
+<td><p>The Movie File Format property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=206">on page 206</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>Movie_Recording_Setting</p></td>
+<td><p>The Movie Recording Setting property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=206">on page 206</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>Movie_Recording_FrameRateSetting</p></td>
+<td><p>The Movie Recording Frame Rate Setting property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=208">on page 208</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>CompressionFileFormatStill</p></td>
+<td><p>The Compression File Format Still property with the following parameters: JPEG, HEIF_422, HEIF_420.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>MediaSLOT1_FileType</p></td>
+<td><p>The Media SLOT1 File Type property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=220">on page 220</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT2_FileType</p></td>
+<td><p>The Media SLOT2 File Type property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=220">on page 220</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>MediaSLOT1_JpegQuality</p></td>
+<td><p>The Media SLOT1 Jpeg Quality property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=221">on page 221</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT2_JpegQuality</p></td>
+<td><p>The Media SLOT2 Jpeg Quality property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=221">on page 221</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>MediaSLOT1_ImageSize</p></td>
+<td><p>The Media SLOT1 Image Size property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=221">on page 221</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT2_ImageSize</p></td>
+<td><p>The Media SLOT2 Image Size property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=222">on page 222</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>RAW_FileCompressionType</p></td>
+<td><p>The RAW File Compression Type property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=222">on page 222</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT1_RAW_FileCompressionType</p></td>
+<td><p>The RAW File Compression Type property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=222">on page 222</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>MediaSLOT2_RAW_FileCompressionType</p></td>
+<td><p>The RAW File Compression Type property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=223">on page 223</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>ZoomAndFocusPosition_Save</p></td>
+<td><p>The Zoom And Focus Position Save property. It can be used to show or save a preset number. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=224">on page 224</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>ZoomAndFocusPosition_Load</p></td>
+<td><p>The Zoom And Focus Position load property. It can be used to show or save a preset number. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=224">on page 224</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>PlaybackMedia</p></td>
+<td><p>The Playback Media property with the following parameters: SLOT1 or SLOT2.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>DispMode</p></td>
+<td><p>The Monitor DISP(Screen Display) Mode property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=230">on page 230</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>TouchOperation</p></td>
+<td><p>The Touch Operation property with the following parameters: Off, On or PlaybackOnly.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>SelectFinder</p></td>
+<td><p>The Select Finder property with the following parameters: Auto, ViewFinder_M and Monitor_M. (M means manual).</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>AutoPowerOffTemperature</p></td>
+<td><p>The Auto Power Off Temperature property with the following parameters: Standard or High.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>BodyKeyLock</p></td>
+<td><p>The Body Key Lock property with the parameters of Lock/Unlock.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>ImageID_Num_Setting</p></td>
+<td><p>The Image ID Num Setting property with the parameters of Off/On. There is more information available <a class="reference external" href="../_static/rcsdk_api.pdf#page=232">on page 232</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>Interval_Rec_Mode</p></td>
+<td><p>The Interval Recording Mode property with the parameters of ON/OFF.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-even"><td><p>Still_Image_Trans_Size</p></td>
+<td><p>The Still Image Trans Size property with the parameters of Original or SmallSize. (Small Size refers to JPEG/HEIF).</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>RAW_J_PC_Save_Image</p></td>
+<td><p>The RAW+J PC Save Image property with the following parameters: RAWAndJPEG, JPEGOnly, RAWOnly, RAWAndHEIF, HEIFOnly.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>LiveView_Image_Quality</p></td>
+<td><p>The Live View Quality property with the parameters of Low or High.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>CustomWB_Capture_Standby</p></td>
+<td><p>The Custom WB Capture Standby property. You can get the current operation with the parameters of Disable or Enable. You can execute the standby with parameters of Up or Down.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>CustomWB_Capture_Standby_Cancel</p></td>
+<td><p>The Custom WB Capture Standby Cancel property. You can get the current operation with the parameters of Disable or Enable. You can execute the standby with parameters of Up or Down.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-odd"><td><p>Remocon_Zoom_Speed_Type</p></td>
+<td><p>The Remote Control Zoom Speed Type property with the parameters of Invalid, Variable or Fixed.  There is more information available <a class="reference external" href="../_static/rcsdk_api.pdf#page=225">on page 225</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>BatteryRemain</p></td>
+<td><p>The Battery Remaining property. It is an integer between 0 and 100 to represent %.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-odd"><td><p>BatteryLevel</p></td>
+<td><p>The Battery Level property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=213">on page 213</a>.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-even"><td><p>RecordingState</p></td>
+<td><p>The Recording State property with the following parameters: Not_Recording, Recording, Recording_Failed, or IntervalRec_Waiting_record (which is a timelapse movie recording).</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-odd"><td><p>LiveViewStatus</p></td>
+<td><p>The Live View Status property with the following parameters: Disable, Enable or Not_support. There is more information available <a class="reference external" href="../_static/rcsdk_api.pdf#page=214">on page 214</a>.</p></td>
+<td><p>Get/Set</p></td>
+</tr>
+<tr class="row-even"><td><p>FocusIndication</p></td>
+<td><p>The Focus Indication property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=214">on page 214</a>.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-odd"><td><p>The MediaSLOT1_Status</p></td>
+<td><p>The Media (SLOT1) Status property with the parameters of OK, NoCard, CardError or RecognizingOrLockedError. There is more information available <a class="reference external" href="../_static/rcsdk_api.pdf#page=215">on page 215</a>.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT1_FormatEnableStatus</p></td>
+<td><p>The Media Full Format Enable Status(SLOT1) property with the following parameters: Enable/Disable.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-odd"><td><p>MediaSLOT2_Status</p></td>
+<td><p>The Media (SLOT2) Status property with the parameters of OK, NoCard, CardError or RecognizingOrLockedError. There is more information available <a class="reference external" href="../_static/rcsdk_api.pdf#page=216">on page 216</a>.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT2_FormatEnableStatus</p></td>
+<td><p>The Media Full Format Enable Status(SLOT2) property with the following parameters: Enable/Disable.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-odd"><td><p>Interval_Rec_Status</p></td>
+<td><p>The Interval REC Status property with the following parameters: WaitingStart/IntervalShooting.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-even"><td><p>CustomWB_Execution_State</p></td>
+<td><p>The Media (SLOT2) Status property with the following parameters: Invalid, Standby, Capturing, OperatingCamera.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-odd"><td><p>CustomWB_Capture_Operation</p></td>
+<td><p>The Custom WB Capture Operation property with the following parameters: Enable/Disable.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-even"><td><p>Zoom_Operation_Status</p></td>
+<td><p>The Zoom Operation Enable Status property with the following parameters: Enable/Disable.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-odd"><td><p>Zoom_Type_Status</p></td>
+<td><p>The Zoom Type Status property with the following parameters: OpticalZoom, SmartZoom, ClearImageZoom, DigitalZoom.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT1_QuickFormatEnableStatus</p></td>
+<td><p>The Media Quick Format Enable Status(SLOT1) property with the following parameters: Enable/Disable.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-odd"><td><p>MediaSLOT2_QuickFormatEnableStatus</p></td>
+<td><p>The Media Quick Format Enable Status(SLOT2) property with the following parameters: Enable/Disable.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-even"><td><p>Cancel_Media_FormatEnableStatus</p></td>
+<td><p>Gets the status of whether the media format is cancelable or not. This property changes during Full formatting. Returned parameters: Enable/Disable.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-odd"><td><p>Zoom_Speed_Range</p></td>
+<td><p>The Zoom Speed Range property. You can find the possible values <a class="reference external" href="../_static/rcsdk_api.pdf#page=225">on page 225</a>.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-even"><td><p>CameraSetting_SaveOperationEnableStatus</p></td>
+<td><p>The Camera Setting Save Operation Enable Status property with the following parameters: Enable/Disable. There is more information available <a class="reference external" href="../_static/rcsdk_api.pdf#page=234">on page 234</a>.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-odd"><td><p>CameraSetting_ReadOperationEnableStatus</p></td>
+<td><p>The Camera Setting Read Operation Enable Status property with the following parameters: Enable/Disable. There is more information available <a class="reference external" href="../_static/rcsdk_api.pdf#page=234">on page 234</a>.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-even"><td><p>CameraSetting_SaveRead_State</p></td>
+<td><p>Gets Camera-Setting Save/Read State property with the following possible returns: Idle/Reading.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-odd"><td><p>CameraSettingsResetEnableStatus</p></td>
+<td><p>Gets Camera Setting Reset Enable State property with the following possible returns: Enable/Disable.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-even"><td><p>APS_C_or_Full_SwitchingSetting</p></td>
+<td><p>Gets APS-C or Full Switching Setting with the following possible returns: Full/APS_C.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-odd"><td><p>APS_C_or_Full_SwitchingEnableStatus</p></td>
+<td><p>Gets APS-C or Full Switching Status with the following possible returns: Enable/Disable.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-even"><td><p>RemoteTouchOperationEnableStatus</p></td>
+<td><p>Gets Remote Touch Operation Enable Status with the following possible returns: Enable/Disable.</p></td>
+<td><p>Get</p></td>
+</tr>
+<tr class="row-odd"><td><p>CancelRemoteTouchOperationEnableStatus</p></td>
+<td><p>Gets Cancel Remote Touch Operation Enable Status with the following possible returns: Enable/Disable.</p></td>
+<td><p>Get</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="commands.html" class="btn btn-neutral float-left" title="Commands" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../python/init-library.html" class="btn btn-neutral float-right" title="Initialise the Camera Library" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Sony Europe B.V.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

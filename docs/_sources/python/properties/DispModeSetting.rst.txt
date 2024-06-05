@@ -1,0 +1,63 @@
+
+Disp Mode Setting Property
+======================================================
+
+The Disp Mode Setting property can be retrieved using the get_property('DispModeSetting') method on a connected camera.
+
+In the Camera Remote SDK, the API call to retrieve the property will be `GetDeviceProperties <../../_static/rcsdk_api.pdf#page=103>`_ .
+
+.. code-block:: python
+
+    import sony_cr
+    import io
+    import sys
+    import time
+    
+    cm = sony_cr.CameraManager()
+    
+    cameras = cm.find_cameras()
+    
+    print("Found {} camera(s)".format(len(cameras)))
+    for i, cam in enumerate(cameras):
+        print("[{}]: {} {}".format(i+1, cam['model'], cam['id']))
+    
+    if len(cameras) == 0:
+        sys.exit(0)
+    
+    cam = cm.get_camera(cameras[0]['id'])
+    
+    cam.connect()
+
+    cam.set_property('Display All Info.': False, 'For viewfinder': False, 'Graphic Display': True, 'Histogram': False, 'Level': False, 'Monitor Off': False, 'No Disp. Info.': False, 'No Disp. Info. Exposure:On': False, 'No Disp. Info. Exposure:TimeOut': False)
+    
+    response = cam.get_property('DispModeSetting')
+    
+    print(response)
+
+Description
++++++++++++
+
+Once the camera library has been initialised and you have connected to a camera (see :doc:`../init-library`), you can start issuing commands, setting or getting parameters.
+
+Call the get_property() method with a string to get the required property ('DispModeSetting' in this case).
+
+Return Value
+++++++++++++
+
+An example of the object returned from this call is below.
+
+.. code-block:: python
+
+    {'possible': [{'Display All Info.': False, 'For viewfinder': False, 'Graphic Display': True, 'Histogram': False, 'Level': False, 'Monitor Off': False, 'No Disp. Info.': False, 'No Disp. Info. Exposure:On': False, 'No Disp. Info. Exposure:TimeOut': False}, {'Display All Info.': False, 'For viewfinder': False, 'Graphic Display': False, 'Histogram': False, 'Level': False, 'Monitor Off': False, 'No Disp. Info.': False, 'No Disp. Info. Exposure:On': False, 'No Disp. Info. Exposure:TimeOut': False}, {'Display All Info.': True, 'For viewfinder': True, 'Graphic Display': True, 'Histogram': True, 'Level': True, 'Monitor Off': True, 'No Disp. Info.': True, 'No Disp. Info. Exposure:On': True, 'No Disp. Info. Exposure:TimeOut': True}, {'Display All Info.': True, 'For viewfinder': True, 'Graphic Display': True, 'Histogram': True, 'Level': True, 'Monitor Off': True, 'No Disp. Info.': True, 'No Disp. Info. Exposure:On': True, 'No Disp. Info. Exposure:TimeOut': True}, {'Display All Info.': False, 'For viewfinder': False, 'Graphic Display': True, 'Histogram': False, 'Level': False, 'Monitor Off': False, 'No Disp. Info.': False, 'No Disp. Info. Exposure:On': False, 'No Disp. Info. Exposure:TimeOut': False}, {'Display All Info.': False, 'For viewfinder': False, 'Graphic Display': False, 'Histogram': False, 'Level': False, 'Monitor Off': False, 'No Disp. Info.': False, 'No Disp. Info. Exposure:On': False, 'No Disp. Info. Exposure:TimeOut': False}], 'readable': True, 'value': {'Display All Info.': True, 'For viewfinder': True, 'Graphic Display': False, 'Histogram': True, 'Level': True, 'Monitor Off': False, 'No Disp. Info.': True, 'No Disp. Info. Exposure:On': False, 'No Disp. Info. Exposure:TimeOut': True}, 'writable': True}
+
+
+Property Details can be found in the `Camera Remote SDK <../../_static/rcsdk_api.pdf#page=26>`_.
+
+Running the Sample
+++++++++++++++++++
+
+Copy the code snippet above into a file called DispModeSetting.py and execute using the command:
+
+.. code-block:: console
+
+    python DispModeSetting.py

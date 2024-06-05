@@ -1,0 +1,64 @@
+
+Media SLOT1 JPEG Quality Property
+======================================================
+
+The Media SLOT1 JPEG Quality property can be retrieved and set using the get_property('MediaSLOT1_JpegQuality') and set_property('MediaSLOT1_JpegQuality', 'Light') methods respectively on a connected camera.
+
+In the Camera Remote SDK, the API call to retrieve the property will be `GetDeviceProperties <../../_static/rcsdk_api.pdf#page=103>`_ .
+
+In the Camera Remote SDK, the API call to set the property will be `SetDeviceProperty <../../_static/rcsdk_api.pdf#page=108>`_.
+
+.. code-block:: python
+
+    import sony_cr
+    import io
+    import sys
+    import time
+    
+    cm = sony_cr.CameraManager()
+    
+    cameras = cm.find_cameras()
+    
+    print("Found {} camera(s)".format(len(cameras)))
+    for i, cam in enumerate(cameras):
+        print("[{}]: {} {}".format(i+1, cam['model'], cam['id']))
+    
+    if len(cameras) == 0:
+        sys.exit(0)
+    
+    cam = cm.get_camera(cameras[0]['id'])
+    
+    cam.connect()
+    
+    cam.set_property('MediaSLOT1_JpegQuality', 'Light')
+    
+    response = cam.get_property('MediaSLOT1_JpegQuality')
+    
+    print(response['value'])
+
+Description
++++++++++++
+
+Once the camera library has been initialised and you have connected to a camera (see :doc:`../init-library`), you can start issuing commands, setting or getting parameters.
+
+Call the get_property() method with a string to get the required property ('MediaSLOT1_JpegQuality' in this case).
+
+Return Value
+++++++++++++
+
+An example of the object returned from this call is below.
+
+.. code-block:: python
+
+    {'value': 'Light', 'possible': ['Light', 'Standard', 'Fine', 'ExFine'], 'writable': True}
+
+Property Details can be found in the `Camera Remote SDK <../../_static/rcsdk_api.pdf#page=26>`_.
+
+Running the Sample
+++++++++++++++++++
+
+Copy the code snippet above into a file called MediaSLOT1_JpegQuality.py and execute using the command:
+
+.. code-block:: console
+
+    python MediaSLOT1_JpegQuality.py

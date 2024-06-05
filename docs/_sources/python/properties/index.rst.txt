@@ -1,0 +1,580 @@
+Properties
+==========
+
+.. list-table:: Properties
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Property Name
+     - Description
+   * - S1
+     - :doc:`/python/properties/S1`
+   * - AEL
+     - :doc:`/python/properties/AEL`
+   * - FEL
+     - :doc:`/python/properties/FEL`
+   * - AWBL
+     - :doc:`/python/properties/AWBL`
+   * - FNumber
+     - :doc:`/python/properties/FNumber`
+   * - ExposureBiasCompensation
+     - :doc:`/python/properties/ExposureBiasCompensation`
+   * - ShutterSpeed
+     - :doc:`/python/properties/ShutterSpeed`
+   * - IsoSensitivity
+     - :doc:`/python/properties/IsoSensitivity`
+   * - FocusArea
+     - :doc:`/python/properties/FocusArea`
+   * - ExposureProgramMode
+     - :doc:`/python/properties/ExposureProgramMode`
+   * - CompressionFileFormatStill
+     - :doc:`/python/properties/CompressionFileFormatStill`
+   * - FileType
+     - :doc:`/python/properties/FileType`
+   * - MediaSLOT1_FileType
+     - :doc:`/python/properties/MediaSLOT1_FileType`
+   * - MediaSLOT2_FileType
+     - :doc:`/python/properties/MediaSLOT2_FileType`
+   * - StillImageQuality
+     - :doc:`/python/properties/StillImageQuality`
+   * - MediaSLOT1_ImageQuality
+     - :doc:`/python/properties/MediaSLOT1_ImageQuality`
+   * - MediaSLOT2_ImageQuality
+     - :doc:`/python/properties/MediaSLOT2_ImageQuality`
+   * - WhiteBalance
+     - :doc:`/python/properties/WhiteBalance`
+   * - FocusMode
+     - :doc:`/python/properties/FocusMode`
+   * - MeteringMode
+     - :doc:`/python/properties/MeteringMode`
+   * - FlashMode
+     - :doc:`/python/properties/FlashMode`
+   * - FlashCompensation
+     - :doc:`/python/properties/FlashCompensation`
+   * - WirelessFlash
+     - :doc:`/python/properties/WirelessFlash`
+   * - RedEyeReduction
+     - :doc:`/python/properties/RedEyeReduction`
+   * - DriveMode
+     - :doc:`/python/properties/DriveMode`
+   * - DRO
+     - :doc:`/python/properties/DRO`
+   * - ImageSize
+     - :doc:`/python/properties/ImageSize`
+   * - MediaSLOT1_ImageSize
+     - :doc:`/python/properties/MediaSLOT1_ImageSize`
+   * - MediaSLOT2_ImageSize
+     - :doc:`/python/properties/MediaSLOT2_ImageSize`
+   * - AspectRatio
+     - :doc:`/python/properties/AspectRatio`
+   * - PictureEffect
+     - :doc:`/python/properties/PictureEffect`
+   * - Colortemp
+     - :doc:`/python/properties/Colortemp`
+   * - ColorTuningAB
+     - :doc:`/python/properties/ColorTuningAB`
+   * - ColorTuningGM
+     - :doc:`/python/properties/ColorTuningGM`
+   * - LiveViewDisplayEffect
+     - :doc:`/python/properties/LiveViewDisplayEffect`
+   * - StillImageStoreDestination
+     - :doc:`/python/properties/StillImageStoreDestination`
+   * - PriorityKeySettings
+     - :doc:`/python/properties/PriorityKeySettings`
+   * - Focus_Magnifier_Setting
+     - :doc:`/python/properties/Focus_Magnifier_Setting`
+   * - DateTime_Settings
+     - :doc:`/python/properties/DateTime_Settings`
+   * - NearFar
+     - :doc:`/python/properties/NearFar`
+   * - LiveView_Image_Quality
+     - :doc:`/python/properties/LiveView_Image_Quality`
+   * - Interval_Rec_Mode
+     - :doc:`/python/properties/Interval_Rec_Mode`
+   * - Still_Image_Trans_Size
+     - :doc:`/python/properties/Still_Image_Trans_Size`
+   * - RAW_J_PC_Save_Image
+     - :doc:`/python/properties/RAW_J_PC_Save_Image`
+   * - CustomWB_Capture_Standby
+     - :doc:`/python/properties/CustomWB_Capture_Standby`
+   * - CustomWB_Capture_Standby_Cancel
+     - :doc:`/python/properties/CustomWB_Capture_Standby_Cancel`
+   * - CustomWB_Capture
+     - :doc:`/python/properties/CustomWB_Capture`
+   * - SnapshotInfo
+     - :doc:`/python/properties/SnapshotInfo`
+   * - BatteryRemain
+     - :doc:`/python/properties/BatteryRemain`
+   * - BatteryLevel
+     - :doc:`/python/properties/BatteryLevel`
+   * - RecordingState
+     - :doc:`/python/properties/RecordingState`
+   * - LiveViewStatus
+     - :doc:`/python/properties/LiveViewStatus`
+   * - FocusIndication
+     - :doc:`/python/properties/FocusIndication`
+   * - MediaSLOT1_Status
+     - :doc:`/python/properties/MediaSLOT1_Status`
+   * - MediaSLOT1_RemainingNumber
+     - :doc:`/python/properties/MediaSLOT1_RemainingNumber`
+   * - MediaSLOT1_RemainingTime
+     - :doc:`/python/properties/MediaSLOT1_RemainingTime`
+   * - MediaSLOT1_FormatEnableStatus
+     - :doc:`/python/properties/MediaSLOT1_FormatEnableStatus`
+   * - MediaSLOT1_QuickFormatEnableStatus
+     - :doc:`/python/properties/MediaSLOT1_QuickFormatEnableStatus`
+   * - MediaSLOT2_Status
+     - :doc:`/python/properties/MediaSLOT2_Status`
+   * - MediaSLOT2_RemainingNumber
+     - :doc:`/python/properties/MediaSLOT2_RemainingNumber`
+   * - MediaSLOT2_RemainingTime
+     - :doc:`/python/properties/MediaSLOT2_RemainingTime`
+   * - MediaSLOT2_FormatEnableStatus
+     - :doc:`/python/properties/MediaSLOT2_FormatEnableStatus`
+   * - MediaSLOT2_QuickFormatEnableStatus
+     - :doc:`/python/properties/MediaSLOT2_QuickFormatEnableStatus`
+   * - Media_FormatProgressRate
+     - :doc:`/python/properties/Media_FormatProgressRate`
+   * - AF_Area_Position
+     - :doc:`/python/properties/AF_Area_Position`
+   * - Zoom_Scale
+     - :doc:`/python/properties/Zoom_Scale`
+   * - Zoom_Setting
+     - :doc:`/python/properties/Zoom_Setting`
+   * - Zoom_Operation
+     - :doc:`/python/properties/Zoom_Operation`
+   * - Movie_File_Format
+     - :doc:`/python/properties/Movie_File_Format`
+   * - Movie_Recording_Setting
+     - :doc:`/python/properties/Movie_Recording_Setting`
+   * - Movie_Recording_FrameRateSetting
+     - :doc:`/python/properties/Movie_Recording_FrameRateSetting`
+   * - Interval_Rec_Status
+     - :doc:`/python/properties/Interval_Rec_Status`
+   * - CustomWB_Execution_State
+     - :doc:`/python/properties/CustomWB_Execution_State`
+   * - CustomWB_Capturable_Area
+     - :doc:`/python/properties/CustomWB_Capturable_Area`
+   * - CustomWB_Capture_Frame_Size
+     - :doc:`/python/properties/CustomWB_Capture_Frame_Size`
+   * - CustomWB_Capture_Operation
+     - :doc:`/python/properties/CustomWB_Capture_Operation`
+   * - Zoom_Bar_Information
+     - :doc:`/python/properties/Zoom_Bar_Information`
+   * - Zoom_Type_Status
+     - :doc:`/python/properties/Zoom_Type_Status`
+   * - RAW_FileCompressionType
+     - :doc:`/python/properties/RAW_FileCompressionType`
+   * - MediaSLOT1_RAW_FileCompressionType
+     - :doc:`/python/properties/MediaSLOT1_RAW_FileCompressionType`
+   * - MediaSLOT2_RAW_FileCompressionType
+     - :doc:`/python/properties/MediaSLOT2_RAW_FileCompressionType`
+   * - Cancel_Media_FormatEnableStatus
+     - :doc:`/python/properties/Cancel_Media_FormatEnableStatus`
+   * - ZoomAndFocusPosition_Save
+     - :doc:`/python/properties/ZoomAndFocusPosition_Save`
+   * - ZoomAndFocusPosition_Load
+     - :doc:`/python/properties/ZoomAndFocusPosition_Load`
+   * - Remocon_Zoom_Speed_Type
+     - :doc:`/python/properties/Remocon_Zoom_Speed_Type`
+   * - Zoom_Speed_Range
+     - :doc:`/python/properties/Zoom_Speed_Range`
+   * - SdkControlMode
+     - :doc:`/python/properties/SdkControlMode`
+   * - ContentsTransferStatus
+     - :doc:`/python/properties/ContentsTransferStatus`
+   * - ContentsTransferCancelEnableStatus
+     - :doc:`/python/properties/ContentsTransferCancelEnableStatus`
+   * - ContentsTransferProgress
+     - :doc:`/python/properties/ContentsTransferProgress`
+   * - IrisModeSetting
+     - :doc:`/python/properties/IrisModeSetting`
+   * - ShutterModeSetting
+     - :doc:`/python/properties/ShutterModeSetting`
+   * - GainControlSetting
+     - :doc:`/python/properties/GainControlSetting`
+   * - PlaybackMedia
+     - :doc:`/python/properties/PlaybackMedia`
+   * - DispModeCandidate
+     - :doc:`/python/properties/DispModeCandidate`
+   * - DispModeSetting
+     - :doc:`/python/properties/DispModeCandidate`
+   * - DispMode
+     - :doc:`/python/properties/DispMode`
+   * - TouchOperation
+     - :doc:`/python/properties/TouchOperation`
+   * - SelectFinder
+     - :doc:`/python/properties/SelectFinder`
+   * - AutoPowerOffTemperature
+     - :doc:`/python/properties/AutoPowerOffTemperature`
+   * - BodyKeyLock
+     - :doc:`/python/properties/BodyKeyLock`
+   * - ImageID_Num_Setting
+     - :doc:`/python/properties/ImageID_Num_Setting`
+   * - ImageID_Num
+     - :doc:`/python/properties/ImageID_Num`
+   * - ImageID_String
+     - :doc:`/python/properties/ImageID_String`
+   * - ExposureCtrlType
+     - :doc:`/python/properties/ExposureCtrlType`
+   * - IsoCurrentSensitivity
+     - :doc:`/python/properties/IsoCurrentSensitivity`
+   * - CameraSetting_SaveOperationEnableStatus
+     - :doc:`/python/properties/CameraSetting_SaveOperationEnableStatus`
+   * - CameraSetting_ReadOperationEnableStatus
+     - :doc:`/python/properties/CameraSetting_ReadOperationEnableStatus`
+   * - CameraSetting_SaveRead_State
+     - :doc:`/python/properties/CameraSetting_SaveRead_State`
+   * - CameraSettingsResetEnableStatus
+     - :doc:`/python/properties/CameraSettingsResetEnableStatus`
+   * - APS_C_or_Full_SwitchingSetting
+     - :doc:`/python/properties/APS_C_or_Full_SwitchingSetting`
+   * - APS_C_or_Full_SwitchingEnableStatus
+     - :doc:`/python/properties/APS_C_or_Full_SwitchingEnableStatus`
+   * - RemoteTouchOperation
+     - :doc:`/python/properties/RemoteTouchOperation`
+   * - RecorderControlProxySetting
+     - :doc:`/python/properties/RecorderControlProxySetting`
+   * - SoftwareVersion
+     - :doc:`/python/properties/SoftwareVersion`
+   * - RemoteTouchOperationEnableStatus
+     - :doc:`/python/properties/RemoteTouchOperationEnableStatus`
+   * - CancelRemoteTouchOperationEnableStatus
+     - :doc:`/python/properties/CancelRemoteTouchOperationEnableStatus`
+   * - FocusBracketShotNumber
+     - :doc:`/python/properties/FocusBracketShotNumber`
+   * - FocusBracketFocusRange
+     - :doc:`/python/properties/FocusBracketFocusRange`
+   * - FocusBracketShootingStatus
+     - :doc:`/python/properties/FocusBracketShootingStatus`
+   * - FunctionOfRemoteTouchOperation
+     - :doc:`/python/properties/FunctionOfRemoteTouchOperation`
+   * - Movie_ProxyFileFormat
+     - :doc:`/python/properties/Movie_ProxyFileFormat`
+   * - SQFrameRate
+     - :doc:`/python/properties/SQFrameRate`
+   * - SQRecordingFrameRateSetting
+     - :doc:`/python/properties/SQRecordingFrameRateSetting`
+   * - SQRecordingSetting
+     - :doc:`/python/properties/SQRecordingSetting`
+   * - AudioRecording
+     - :doc:`/python/properties/AudioRecording`
+   * - AudioInputMasterLevel
+     - :doc:`/python/properties/AudioInputMasterLevel`
+   * - TimeCodePreset
+     - :doc:`/python/properties/TimeCodePreset`
+   * - TimeCodeFormat
+     - :doc:`/python/properties/TimeCodeFormat`
+   * - TimeCodeRun
+     - :doc:`/python/properties/TimeCodeRun`
+   * - TimeCodeMake
+     - :doc:`/python/properties/TimeCodeMake`
+   * - UserBitPreset
+     - :doc:`/python/properties/UserBitPreset`
+   * - UserBitTimeRec
+     - :doc:`/python/properties/UserBitTimeRec`
+   * - ImageStabilizationSteadyShot
+     - :doc:`/python/properties/ImageStabilizationSteadyShot`
+   * - Movie_ImageStabilizationSteadyShot
+     - :doc:`/python/properties/Movie_ImageStabilizationSteadyShot`
+   * - SilentMode
+     - :doc:`/python/properties/SilentMode`
+   * - SilentModeApertureDriveInAF
+     - :doc:`/python/properties/SilentModeApertureDriveInAF`
+   * - SilentModeShutterWhenPowerOff
+     - :doc:`/python/properties/SilentModeShutterWhenPowerOff`
+   * - SilentModeAutoPixelMapping
+     - :doc:`/python/properties/SilentModeAutoPixelMapping`
+   * - ShutterType
+     - :doc:`/python/properties/ShutterType`
+   * - PictureProfile
+     - :doc:`/python/properties/PictureProfile`
+   * - PictureProfile_BlackLevel
+     - :doc:`/python/properties/PictureProfile_BlackLevel`
+   * - PictureProfile_Gamma
+     - :doc:`/python/properties/PictureProfile_Gamma`
+   * - PictureProfile_BlackGammaRange
+     - :doc:`/python/properties/PictureProfile_BlackGammaRange`
+   * - PictureProfile_BlackGammaLevel
+     - :doc:`/python/properties/PictureProfile_BlackGammaLevel`
+   * - PictureProfile_KneeMode
+     - :doc:`/python/properties/PictureProfile_KneeMode`
+   * - PictureProfile_KneeAutoSet_MaxPoint
+     - :doc:`/python/properties/PictureProfile_KneeAutoSet_MaxPoint`
+   * - PictureProfile_KneeAutoSet_Sensitivity
+     - :doc:`/python/properties/PictureProfile_KneeAutoSet_Sensitivity`
+   * - PictureProfile_KneeManualSet_Point
+     - :doc:`/python/properties/PictureProfile_KneeManualSet_Point`
+   * - PictureProfile_KneeManualSet_Slope
+     - :doc:`/python/properties/PictureProfile_KneeManualSet_Slope`
+   * - PictureProfile_ColorMode
+     - :doc:`/python/properties/PictureProfile_ColorMode`
+   * - PictureProfile_Saturation
+     - :doc:`/python/properties/PictureProfile_Saturation`
+   * - PictureProfile_ColorPhase
+     - :doc:`/python/properties/PictureProfile_ColorPhase`
+   * - PictureProfile_ColorDepthRed
+     - :doc:`/python/properties/PictureProfile_ColorDepthRed`
+   * - PictureProfile_ColorDepthGreen
+     - :doc:`/python/properties/PictureProfile_ColorDepthGreen`
+   * - PictureProfile_ColorDepthBlue
+     - :doc:`/python/properties/PictureProfile_ColorDepthBlue`
+   * - PictureProfile_ColorDepthCyan
+     - :doc:`/python/properties/PictureProfile_ColorDepthCyan`
+   * - PictureProfile_ColorDepthMagenta
+     - :doc:`/python/properties/PictureProfile_ColorDepthMagenta`
+   * - PictureProfile_ColorDepthYellow
+     - :doc:`/python/properties/PictureProfile_ColorDepthYellow`
+   * - PictureProfile_DetailLevel
+     - :doc:`/python/properties/PictureProfile_DetailLevel`
+   * - PictureProfile_DetailAdjustMode
+     - :doc:`/python/properties/PictureProfile_DetailAdjustMode`
+   * - PictureProfile_DetailAdjustVHBalance
+     - :doc:`/python/properties/PictureProfile_DetailAdjustVHBalance`
+   * - PictureProfile_DetailAdjustBWBalance
+     - :doc:`/python/properties/PictureProfile_DetailAdjustBWBalance`
+   * - PictureProfile_DetailAdjustLimit
+     - :doc:`/python/properties/PictureProfile_DetailAdjustLimit`
+   * - PictureProfile_DetailAdjustCrispening
+     - :doc:`/python/properties/PictureProfile_DetailAdjustCrispening`
+   * - PictureProfile_DetailAdjustHiLightDetail
+     - :doc:`/python/properties/PictureProfile_DetailAdjustHiLightDetail`
+   * - PictureProfile_Copy
+     - :doc:`/python/properties/PictureProfile_Copy`
+   * - PictureProfileResetEnableStatus
+     - :doc:`/python/properties/PictureProfileResetEnableStatus`
+   * - CreativeLook
+     - :doc:`/python/properties/CreativeLook`
+   * - CreativeLook_Contrast
+     - :doc:`/python/properties/CreativeLook_Contrast`
+   * - CreativeLook_Highlights
+     - :doc:`/python/properties/CreativeLook_Highlights`
+   * - CreativeLook_Shadows
+     - :doc:`/python/properties/CreativeLook_Shadows`
+   * - CreativeLook_Fade
+     - :doc:`/python/properties/CreativeLook_Fade`
+   * - CreativeLook_Saturation
+     - :doc:`/python/properties/CreativeLook_Saturation`
+   * - CreativeLook_SharpnessRange
+     - :doc:`/python/properties/CreativeLook_SharpnessRange`
+   * - CreativeLook_Clarity
+     - :doc:`/python/properties/CreativeLook_Clarity`
+   * - CreativeLook_Clarity
+     - :doc:`/python/properties/CreativeLook_Clarity`
+   * - CreativeLook_CustomLook
+     - :doc:`/python/properties/CreativeLook_CustomLook`
+   * - CreativeLookResetEnableStatus
+     - :doc:`/python/properties/CreativeLookResetEnableStatus`
+   * - ProxyRecordingSetting
+     - :doc:`/python/properties/ProxyRecordingSetting`
+   * - TimeCodePresetResetEnableStatus
+     - :doc:`/python/properties/TimeCodePresetResetEnableStatus`
+   * - UserBitPresetResetEnableStatus
+     - :doc:`/python/properties/UserBitPresetResetEnableStatus`
+   * - SensorCleaningEnableStatus
+     - :doc:`/python/properties/SensorCleaningEnableStatus`
+   * - LensVersionNumber
+     - :doc:`/python/properties/LensVersionNumber`
+   * - DeviceOverheatingState
+     - :doc:`/python/properties/DeviceOverheatingState`
+   * - JpegQuality
+     - :doc:`/python/properties/JpegQuality`
+   * - MediaSLOT1_JpegQuality
+     - :doc:`/python/properties/MediaSLOT1_JpegQuality`
+   * - MediaSLOT2_JpegQuality
+     - :doc:`/python/properties/MediaSLOT2_JpegQuality`
+   * - Zoom_Operation_Status
+     - :doc:`/python/properties/Zoom_Operation_Status`
+
+.. toctree::
+   :maxdepth: 0
+   :hidden:
+
+   DeviceOverheatingState
+   LensVersionNumber
+   SensorCleaningEnableStatus
+   UserBitPresetResetEnableStatus
+   TimeCodePresetResetEnableStatus
+   ProxyRecordingSetting
+   CreativeLookResetEnableStatus
+   CreativeLook_CustomLook
+   CreativeLook_Clarity
+   CreativeLook_SharpnessRange
+   CreativeLook_Saturation
+   CreativeLook_Fade
+   CreativeLook_Shadows
+   CreativeLook_Highlights
+   CreativeLook_Contrast
+   CreativeLook
+   PictureProfileResetEnableStatus
+   PictureProfile_Copy
+   PictureProfile_DetailAdjustHiLightDetail
+   PictureProfile_DetailAdjustCrispening
+   PictureProfile_DetailAdjustLimit
+   PictureProfile_DetailAdjustBWBalance
+   PictureProfile_DetailAdjustVHBalance
+   PictureProfile_DetailAdjustMode
+   PictureProfile_DetailLevel
+   PictureProfile_ColorDepthYellow
+   PictureProfile_ColorDepthMagenta
+   PictureProfile_ColorDepthCyan
+   PictureProfile_ColorDepthBlue
+   PictureProfile_ColorDepthGreen
+   PictureProfile_ColorDepthRed
+   PictureProfile_ColorPhase
+   PictureProfile_Saturation
+   PictureProfile_ColorMode
+   PictureProfile_KneeManualSet_Slope
+   PictureProfile_KneeManualSet_Point
+   PictureProfile_KneeAutoSet_Sensitivity
+   PictureProfile_KneeAutoSet_MaxPoint
+   PictureProfile_KneeMode
+   PictureProfile_BlackGammaLevel
+   PictureProfile_BlackGammaRange
+   PictureProfile_Gamma
+   PictureProfile_BlackLevel
+   PictureProfile
+   ShutterType
+   SilentModeAutoPixelMapping
+   SilentModeShutterWhenPowerOff
+   SilentModeApertureDriveInAF
+   SilentMode
+   Movie_ImageStabilizationSteadyShot
+   ImageStabilizationSteadyShot
+   UserBitTimeRec
+   UserBitPreset
+   TimeCodeMake
+   TimeCodeRun
+   TimeCodeFormat
+   TimeCodePreset
+   AudioInputMasterLevel
+   AudioRecording
+   SQRecordingSetting
+   SQRecordingFrameRateSetting
+   SQFrameRate
+   Movie_ProxyFileFormat
+   FocusBracketShootingStatus
+   FocusBracketFocusRange
+   FocusBracketShotNumber
+   SoftwareVersion
+   RecorderControlProxySetting
+   RemoteTouchOperation
+   IsoCurrentSensitivity
+   ExposureCtrlType
+   ImageID_String
+   ImageID_Num
+   DispModeSetting
+   DispModeCandidate
+   GainControlSetting
+   ShutterModeSetting
+   IrisModeSetting
+   ContentsTransferProgress
+   ContentsTransferCancelEnableStatus
+   Zoom_Bar_Information
+   CustomWB_Capture_Frame_Size
+   CustomWB_Capturable_Area
+   Zoom_Scale
+   Media_FormatProgressRate
+   MediaSLOT2_RemainingNumber
+   MediaSLOT2_RemainingTime
+   MediaSLOT1_RemainingNumber
+   MediaSLOT1_RemainingTime
+   SnapshotInfo
+   CustomWB_Capture
+   Focus_Magnifier_Setting
+   ColorTuningGM
+   ColorTuningAB
+   Colortemp
+   StillImageQuality
+   MediaSLOT1_ImageQuality
+   MediaSLOT2_ImageQuality
+   SdkControlMode
+   FNumber
+   IsoSensitivity
+   ShutterSpeed
+   PriorityKeySettings
+   ExposureProgramMode
+   DriveMode
+   FocusMode
+   FocusArea
+   LiveView_Image_Quality
+   LiveViewStatus
+   MediaSLOT1_FormatEnableStatus
+   MediaSLOT2_FormatEnableStatus
+   MediaSLOT1_QuickFormatEnableStatus
+   MediaSLOT2_QuickFormatEnableStatus
+   WhiteBalance
+   CustomWB_Capture_Standby
+   CustomWB_Capture_Standby_Cancel
+   CustomWB_Capture_Operation
+   CustomWB_Execution_State
+   Zoom_Operation_Status
+   Zoom_Setting
+   Zoom_Type_Status
+   Zoom_Operation
+   Zoom_Speed_Range
+   ZoomAndFocusPosition_Save
+   ZoomAndFocusPosition_Load
+   Remocon_Zoom_Speed_Type
+   FocusIndication
+   ContentsTransferStatus
+   MeteringMode
+   FlashMode
+   BatteryLevel
+   BatteryRemain
+   ExposureBiasCompensation
+   FlashCompensation
+   DRO
+   AspectRatio
+   AEL
+   S1
+   FEL
+   AWBL
+   PictureEffect
+   StillImageStoreDestination
+   LiveViewDisplayEffect
+   Movie_File_Format
+   Interval_Rec_Mode
+   WirelessFlash
+   RedEyeReduction
+   Still_Image_Trans_Size
+   RAW_J_PC_Save_Image
+   CameraSetting_SaveOperationEnableStatus
+   CameraSetting_ReadOperationEnableStatus
+   CameraSettingsResetEnableStatus
+   CameraSetting_SaveRead_State
+   CompressionFileFormatStill
+   MediaSLOT1_RAW_FileCompressionType
+   MediaSLOT2_RAW_FileCompressionType
+   MediaSLOT1_FileType
+   MediaSLOT2_FileType
+   MediaSLOT1_JpegQuality
+   MediaSLOT2_JpegQuality
+   Movie_Recording_FrameRateSetting
+   MediaSLOT1_Status
+   MediaSLOT2_Status
+   MediaSLOT1_ImageSize
+   MediaSLOT2_ImageSize
+   Cancel_Media_FormatEnableStatus
+   NearFar
+   RecordingState
+   Interval_Rec_Status
+   JpegQuality
+   ImageSize
+   FileType
+   RAW_FileCompressionType
+   FunctionOfRemoteTouchOperation
+   RemoteTouchOperationEnableStatus
+   CancelRemoteTouchOperationEnableStatus
+   Movie_Recording_Setting
+   TouchOperation
+   SelectFinder
+   AutoPowerOffTemperature
+   BodyKeyLock
+   APS_C_or_Full_SwitchingSetting
+   APS_C_or_Full_SwitchingEnableStatus
+   DispMode
+   PlaybackMedia
+   ImageID_Num_Setting
+   DateTime_Settings
+   AF_Area_Position

@@ -1,0 +1,8 @@
+Helper Commands
+===============
+
+.. toctree::
+   :maxdepth: 1
+
+   capture-image
+

@@ -1,0 +1,8 @@
+sony_cr/__init__.py,sha256=XNNRwCifDv3X-NNLcsKFUcqQpq8KAbZIFgSsStTXjNE,2223
+sony_cr/_sony_cr.cpython-310-x86_64-linux-gnu.so,sha256=4iYxsNVdMAorghB5-9uU2vlLZvjd4LH9FEqkRX6WHbM,1498800
+sony_cr/cli.py,sha256=m84NXkLfcZ1ns3jDRjSAJs8TEc5sDaC3JfDByhqUly4,1243
+sony_cr-1.11.0.dist-info/METADATA,sha256=lEzqhRWOwtf0NO5bDolcdsHMtzKPgu66lsXBp1qCOCM,193
+sony_cr-1.11.0.dist-info/WHEEL,sha256=JD64SFi5h5TkrCzU2zWKlSIgZ-k_Lru9GKYxEG6JNFw,105
+sony_cr-1.11.0.dist-info/entry_points.txt,sha256=QU-jDiHVTXioFIh-gkBp3_GXh-zrIl9sSadfYarA7Ww,46
+sony_cr-1.11.0.dist-info/top_level.txt,sha256=ok76OXrxxxvXAGyF292AziVqZSBzkAr90UcszpTBIYM,8
+sony_cr-1.11.0.dist-info/RECORD,,

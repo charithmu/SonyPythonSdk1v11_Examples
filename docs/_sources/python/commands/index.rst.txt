@@ -1,0 +1,26 @@
+Commands
+========
+
+.. toctree::
+   :maxdepth: 1
+
+   release
+   media-format
+   media-quick-format
+   movie-record
+   cancel-media-format
+   s1-and-release
+   cancel-contents-transfer
+   camera-settings-reset
+   apsc-or-full
+   movie-rec-button-toggle
+   cancel-remote-touch-operation
+   picture-profile-reset
+   creative-look-reset
+   pixel-mapping
+   time-code-preset-reset
+   user-bit-preset-reset
+   sensor-cleaning
+   power-off
+
+

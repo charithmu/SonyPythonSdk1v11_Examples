@@ -1,0 +1,38 @@
+Downloads
+=========
+
+Sony Camera Driver
+------------------
+
+
+Latest driver for all sony cameras:
+
+- `SonyCameraInstallDriverGUI.exe <../_static/SonyCameraInstallDriverGUI.exe>`_
+
+Uninstallation instructions can be found `here <../_static/rcsdk_api.pdf#page=22>`_
+
+---------------------------------------------------------
+
+CRSDK Wheel Package (Windows)
+------------------------------
+
+*The latest crsdk python library wheel package:*
+
+**API v1.11.00**
+
+
+(For Python 3.11): `sony_cr-1.11.0-cp311-win_amd64.whl <../_static/sony_cr-1.11.0-cp311-cp311-win_amd64.whl>`_
+
+
+---------------------------------------------------------
+
+CRSDK Wheel Package (Ubuntu 22.04 LTS)
+-----------------------------------------
+
+*The latest crsdk python library wheel package:*
+
+**API v1.11.00**
+
+
+- `sony_cr-1.11.0-cp310-linux_x86_64.whl <../_static/sony_cr-1.11.0-cp310-cp310-linux_x86_64.whl>`_
+

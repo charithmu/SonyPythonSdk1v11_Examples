@@ -1,0 +1,50 @@
+.. b2b-sdk-ad documentation master file, created by
+   sphinx-quickstart on Tue Apr 11 16:51:28 2023.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+
+Sony Camera Remote SDK Python Bindings
+======================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Introduction
+
+   overview
+   quick-start
+   setup/software_installation
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Downloads
+
+   downloads/downloads
+
+.. toctree::
+   :maxdepth: 1
+   :caption: API Documentation
+
+   api/commands
+   api/properties
+
+.. toctree::
+   :maxdepth: 2
+   :caption:  Samples
+
+   python/init-library
+   python/helper-commands/index
+   python/commands/index
+   python/properties/index
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Release Notes
+
+   release_notes/1.11.0
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+APS-C or Full Switching
+========================
+
+The APS-C or Full Switching command can be issued on a connected camera using the apsc_or_full_down() and apsc_or_full_up() methods. 
+
+In the Camera Remote SDK, the API call to issue a command for aps-c or full switching up/down is `SendCommand <../../_static/rcsdk_api.pdf#page=109>`_ .
+
+Details about the APS-C or Full Switching can be found at `APS-CorFullSwitching <../../_static/rcsdk_api.pdf#page=226>`_
+
+.. code-block:: python
+
+    import sony_cr
+    import io
+    import sys
+    import time
+
+    cm = sony_cr.CameraManager()
+
+    cameras = cm.find_cameras()
+
+    print("Found {} camera(s)".format(len(cameras)))
+    for i, cam in enumerate(cameras):
+        print("[{}]: {} {}".format(i+1, cam['model'], cam['id']))
+        
+    if len(cameras) == 0:
+        sys.exit(0)
+        
+    cam = cm.get_camera(cameras[0]['id'])
+
+    cam.connect()
+
+    cam.apsc_or_full_down()
+    cam.apsc_or_full_up()
+
+    time.sleep(2)
+
+
+Running the Sample
+++++++++++++++++++
+
+Copy the code snippet above into a file called apsc-or-full.py and execute using the command:
+
+.. code-block:: console
+
+    python apsc-or-full.py

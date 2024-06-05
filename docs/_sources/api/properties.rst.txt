@@ -1,0 +1,278 @@
+Properties
+==========
+
+See Samples/:doc:`../python/properties/index` for usage examples.
+
+Here is the list of the currently supported properties for the python library.
+For the full list of properties, please see `function list <../_static/rcsdk_api.pdf#page=26>`_.
+
+Please note that when the table provides the link to the possible parameters of properties,
+the '\CrDeviceProperty_' or 'Cr[parameter-name]_' prefixes should not be used. It been removed from the code for the sake of simplicity.
+
+-------------------------------------------------------------------------------
+
+.. list-table::
+   :widths: 10 90 30
+   :header-rows: 1
+
+   * - Property Name
+     - Description
+     - Get/Set?
+   * - S1
+     - The Shutter Half Release property with the following parameters: Lock/Unlock.
+     - Get/Set
+   * - AEL
+     - The AE Lock Indicator property with the following parameters: Lock/Unlock.
+     - Get/Set
+   * - FEL
+     - The FEL Lock Indicator property with the following parameters: Lock/Unlock.
+     - Get/Set
+   * - AWBL
+     - The AWB Lock Indicator property with the following parameters: Lock/Unlock.
+     - Get/Set
+   * - FNumber
+     - The current aperture value in the format 'F-Number' or 'Nothing/Unknown' eg. F-9.5.
+     - Get/Set
+   * - ExposureBiasCompensation
+     - The Exposure Bias Compensation property in the format '-5.0Ev' or similar from possible values.
+     - Get/Set
+   * - FlashCompensation
+     - The Flash Compensation property in the format '-5.0Ev' or similar from possible values.
+     - Get/Set
+   * - ShutterSpeed
+     - The Shutter Speed property in the format '1.5"', '1/10', '1/1000' etc. or 'Bulb/Nothing'.
+     - Get/Set
+   * - IsoSensitivity
+     - The ISO Sensitivity property in the format '100', '320' or similar from possible values.
+     - Get/Set
+   * - ExposureProgramMode
+     - The Exposure Program mode property. It has many possible values, all of which are listed `on page 187 <../_static/rcsdk_api.pdf#page=187>`_.
+     - Get/Set
+   * - FileType
+     - The File Type property in the format 'JPEG' or the following: RAW+JPEG, JPEG, RAW, RAW+HEIF and HEIF.
+     - Get/Set
+   * - JpegQuality
+     - The Jpeg Quality property with the following parameters: Light, Standard, Fine, Extra fine.
+     - Get/Set
+   * - WhiteBalance
+     - The White Balance property. You can find the possible values `on page 190 <../_static/rcsdk_api.pdf#page=190>`_.
+     - Get/Set
+   * - FocusMode
+     - The Focus Mode property. You can find the possible values `on page 191 <../_static/rcsdk_api.pdf#page=191>`_.
+     - Get/Set
+   * - MeteringMode
+     - The Metering Mode property. You can find the possible values `on page 191 <../_static/rcsdk_api.pdf#page=191>`_.
+     - Get/Set
+   * - FlashMode
+     - The Flash Mode property. You can find the possible values `on page 191 <../_static/rcsdk_api.pdf#page=191>`_.
+     - Get/Set
+   * - WirelessFlash
+     - The Wireless Flash property with the following parameters: On/Off.
+     - Get/Set
+   * - RedEyeReduction
+     - The Red Eye Reduction property with the following parameters: On/Off.
+     - Get/Set
+   * - DriveMode
+     - The Drive Mode property. You can find the possible values `on page 192 <../_static/rcsdk_api.pdf#page=192>`_.
+     - Get/Set
+   * - DRO
+     - The Dynamic Range Optimizer property. You can find the possible values `on page 196 <../_static/rcsdk_api.pdf#page=196>`_.
+     - Get/Set
+   * - ImageSize
+     - The Aspect Ratio property with the following parameters: L, M, S, VGA.
+     - Get/Set
+   * - AspectRatio
+     - The Aspect Ratio property with the following parameters: 3:2, 16:9, 4:3, 1:1.
+     - Get/Set
+   * - FocusArea
+     - The Focus Area property. You can find the possible values `on page 187 <../_static/rcsdk_api.pdf#page=187>`_.
+     - Get/Set
+   * - LiveViewDisplayEffect
+     - The Live View Display Effect property from the following: Unknown, ON, OFF.
+     - Get/Set
+   * - StillImageStoreDestination
+     - The Still Image Save Destination property with the following parameters: HostPC, MemoryCard, HostPCAndMemoryCard. See more `on page 200 <../_static/rcsdk_api.pdf#page=200>`_.
+     - Get/Set
+   * - PriorityKeySettings
+     - The Priority Key Settings property with the following parameters: CameraPosition, PCRemote. See more `on page 200 <../_static/rcsdk_api.pdf#page=200>`_.
+     - Get/Set
+   * - DateTime_Settings
+     - The Date Time Settings property in 64 bit UNIX time format. See more `on page 203 <../_static/rcsdk_api.pdf#page=203>`_. It is a get/set property
+     - Get/Set
+   * - NearFar
+     - The Near/Far Enable property with the following parameters: Enable/Disable.
+     - Get/Set
+   * - AF_Area_Position
+     - The AF Area Position property. It is a set of int coordinates for the x and y position. See more `on page 204 <../_static/rcsdk_api.pdf#page=204>`_.
+     - Set
+   * - Zoom_Setting
+     - The Zoom Setting property with the following parameters: OpticalZoomOnly, SmartZoomOnly, On_ClearImageZoom, On_DigitalZoom.
+     - Get/Set
+   * - Zoom_Operation
+     - The Zoom Operation property. You can change the zoom by specifying a positive or negative value to begin zooming in/out, and then stopping using '0'. See more `on page 205 <../_static/rcsdk_api.pdf#page=205>`_.
+     - Set
+   * - Movie_File_Format
+     - The Movie File Format property. You can find the possible values `on page 206 <../_static/rcsdk_api.pdf#page=206>`_.
+     - Get/Set
+   * - Movie_Recording_Setting
+     - The Movie Recording Setting property. You can find the possible values `on page 206 <../_static/rcsdk_api.pdf#page=206>`_.
+     - Get/Set
+   * - Movie_Recording_FrameRateSetting
+     - The Movie Recording Frame Rate Setting property. You can find the possible values `on page 208 <../_static/rcsdk_api.pdf#page=208>`_.
+     - Get/Set
+   * - CompressionFileFormatStill
+     - The Compression File Format Still property with the following parameters: JPEG, HEIF_422, HEIF_420.
+     - Get/Set
+   * - MediaSLOT1_FileType
+     - The Media SLOT1 File Type property. You can find the possible values `on page 220 <../_static/rcsdk_api.pdf#page=220>`_.
+     - Get/Set
+   * - MediaSLOT2_FileType
+     - The Media SLOT2 File Type property. You can find the possible values `on page 220 <../_static/rcsdk_api.pdf#page=220>`_.
+     - Get/Set
+   * - MediaSLOT1_JpegQuality
+     - The Media SLOT1 Jpeg Quality property. You can find the possible values `on page 221 <../_static/rcsdk_api.pdf#page=221>`_.
+     - Get/Set
+   * - MediaSLOT2_JpegQuality
+     - The Media SLOT2 Jpeg Quality property. You can find the possible values `on page 221 <../_static/rcsdk_api.pdf#page=221>`_.
+     - Get/Set
+   * - MediaSLOT1_ImageSize
+     - The Media SLOT1 Image Size property. You can find the possible values `on page 221 <../_static/rcsdk_api.pdf#page=221>`_.
+     - Get/Set
+   * - MediaSLOT2_ImageSize
+     - The Media SLOT2 Image Size property. You can find the possible values `on page 222 <../_static/rcsdk_api.pdf#page=222>`_.
+     - Get/Set
+   * - RAW_FileCompressionType
+     - The RAW File Compression Type property. You can find the possible values `on page 222 <../_static/rcsdk_api.pdf#page=222>`_.
+     - Get/Set
+   * - MediaSLOT1_RAW_FileCompressionType
+     - The RAW File Compression Type property. You can find the possible values `on page 222 <../_static/rcsdk_api.pdf#page=222>`_.
+     - Get/Set
+   * - MediaSLOT2_RAW_FileCompressionType
+     - The RAW File Compression Type property. You can find the possible values `on page 223 <../_static/rcsdk_api.pdf#page=223>`_.
+     - Get/Set
+   * - ZoomAndFocusPosition_Save
+     - The Zoom And Focus Position Save property. It can be used to show or save a preset number. You can find the possible values `on page 224 <../_static/rcsdk_api.pdf#page=224>`_.
+     - Get/Set
+   * - ZoomAndFocusPosition_Load
+     - The Zoom And Focus Position load property. It can be used to show or save a preset number. You can find the possible values `on page 224 <../_static/rcsdk_api.pdf#page=224>`_.
+     - Get/Set
+   * - PlaybackMedia
+     - The Playback Media property with the following parameters: SLOT1 or SLOT2.
+     - Get/Set
+   * - DispMode
+     - The Monitor DISP(Screen Display) Mode property. You can find the possible values `on page 230 <../_static/rcsdk_api.pdf#page=230>`_.
+     - Get/Set
+   * - TouchOperation
+     - The Touch Operation property with the following parameters: Off, On or PlaybackOnly.
+     - Get/Set
+   * - SelectFinder
+     - The Select Finder property with the following parameters: Auto, ViewFinder_M and Monitor_M. (M means manual).
+     - Get/Set
+   * - AutoPowerOffTemperature
+     - The Auto Power Off Temperature property with the following parameters: Standard or High.
+     - Get/Set
+   * - BodyKeyLock
+     - The Body Key Lock property with the parameters of Lock/Unlock.
+     - Get/Set
+   * - ImageID_Num_Setting
+     - The Image ID Num Setting property with the parameters of Off/On. There is more information available `on page 232 <../_static/rcsdk_api.pdf#page=232>`_.
+     - Get/Set
+   * - Interval_Rec_Mode
+     - The Interval Recording Mode property with the parameters of ON/OFF.
+     - Get
+   * - Still_Image_Trans_Size
+     - The Still Image Trans Size property with the parameters of Original or SmallSize. (Small Size refers to JPEG/HEIF).
+     - Get/Set
+   * - RAW_J_PC_Save_Image
+     - The RAW+J PC Save Image property with the following parameters: RAWAndJPEG, JPEGOnly, RAWOnly, RAWAndHEIF, HEIFOnly.
+     - Get/Set
+   * - LiveView_Image_Quality
+     - The Live View Quality property with the parameters of Low or High.
+     - Get/Set
+   * - CustomWB_Capture_Standby
+     - The Custom WB Capture Standby property. You can get the current operation with the parameters of Disable or Enable. You can execute the standby with parameters of Up or Down.
+     - Get/Set
+   * - CustomWB_Capture_Standby_Cancel
+     - The Custom WB Capture Standby Cancel property. You can get the current operation with the parameters of Disable or Enable. You can execute the standby with parameters of Up or Down.
+     - Get/Set
+   * - Remocon_Zoom_Speed_Type
+     - The Remote Control Zoom Speed Type property with the parameters of Invalid, Variable or Fixed.  There is more information available `on page 225 <../_static/rcsdk_api.pdf#page=225>`_.
+     - Get/Set
+   * - BatteryRemain
+     - The Battery Remaining property. It is an integer between 0 and 100 to represent %.
+     - Get
+   * - BatteryLevel
+     - The Battery Level property. You can find the possible values `on page 213 <../_static/rcsdk_api.pdf#page=213>`_.
+     - Get
+   * - RecordingState
+     - The Recording State property with the following parameters: Not_Recording, Recording, Recording_Failed, or IntervalRec_Waiting_record (which is a timelapse movie recording).
+     - Get
+   * - LiveViewStatus
+     - The Live View Status property with the following parameters: Disable, Enable or Not_support. There is more information available `on page 214 <../_static/rcsdk_api.pdf#page=214>`_.
+     - Get/Set
+   * - FocusIndication
+     - The Focus Indication property. You can find the possible values `on page 214 <../_static/rcsdk_api.pdf#page=214>`_.
+     - Get
+   * - The MediaSLOT1_Status
+     - The Media (SLOT1) Status property with the parameters of OK, NoCard, CardError or RecognizingOrLockedError. There is more information available `on page 215 <../_static/rcsdk_api.pdf#page=215>`_.
+     - Get
+   * - MediaSLOT1_FormatEnableStatus
+     - The Media Full Format Enable Status(SLOT1) property with the following parameters: Enable/Disable.
+     - Get
+   * - MediaSLOT2_Status
+     - The Media (SLOT2) Status property with the parameters of OK, NoCard, CardError or RecognizingOrLockedError. There is more information available `on page 216 <../_static/rcsdk_api.pdf#page=216>`_.
+     - Get
+   * - MediaSLOT2_FormatEnableStatus
+     - The Media Full Format Enable Status(SLOT2) property with the following parameters: Enable/Disable.
+     - Get
+   * - Interval_Rec_Status
+     - The Interval REC Status property with the following parameters: WaitingStart/IntervalShooting.
+     - Get
+   * - CustomWB_Execution_State
+     - The Media (SLOT2) Status property with the following parameters: Invalid, Standby, Capturing, OperatingCamera.
+     - Get
+   * - CustomWB_Capture_Operation
+     - The Custom WB Capture Operation property with the following parameters: Enable/Disable.
+     - Get
+   * - Zoom_Operation_Status
+     - The Zoom Operation Enable Status property with the following parameters: Enable/Disable.
+     - Get
+   * - Zoom_Type_Status
+     - The Zoom Type Status property with the following parameters: OpticalZoom, SmartZoom, ClearImageZoom, DigitalZoom.
+     - Get
+   * - MediaSLOT1_QuickFormatEnableStatus
+     - The Media Quick Format Enable Status(SLOT1) property with the following parameters: Enable/Disable.
+     - Get
+   * - MediaSLOT2_QuickFormatEnableStatus
+     - The Media Quick Format Enable Status(SLOT2) property with the following parameters: Enable/Disable.
+     - Get
+   * - Cancel_Media_FormatEnableStatus
+     - Gets the status of whether the media format is cancelable or not. This property changes during Full formatting. Returned parameters: Enable/Disable.
+     - Get
+   * - Zoom_Speed_Range
+     - The Zoom Speed Range property. You can find the possible values `on page 225 <../_static/rcsdk_api.pdf#page=225>`_.
+     - Get
+   * - CameraSetting_SaveOperationEnableStatus
+     - The Camera Setting Save Operation Enable Status property with the following parameters: Enable/Disable. There is more information available `on page 234 <../_static/rcsdk_api.pdf#page=234>`_.
+     - Get
+   * - CameraSetting_ReadOperationEnableStatus
+     - The Camera Setting Read Operation Enable Status property with the following parameters: Enable/Disable. There is more information available `on page 234 <../_static/rcsdk_api.pdf#page=234>`_.
+     - Get
+   * - CameraSetting_SaveRead_State
+     - Gets Camera-Setting Save/Read State property with the following possible returns: Idle/Reading.
+     - Get
+   * - CameraSettingsResetEnableStatus
+     - Gets Camera Setting Reset Enable State property with the following possible returns: Enable/Disable.
+     - Get
+   * - APS_C_or_Full_SwitchingSetting
+     - Gets APS-C or Full Switching Setting with the following possible returns: Full/APS_C.
+     - Get
+   * - APS_C_or_Full_SwitchingEnableStatus
+     - Gets APS-C or Full Switching Status with the following possible returns: Enable/Disable.
+     - Get
+   * - RemoteTouchOperationEnableStatus
+     - Gets Remote Touch Operation Enable Status with the following possible returns: Enable/Disable.
+     - Get
+   * - CancelRemoteTouchOperationEnableStatus
+     - Gets Cancel Remote Touch Operation Enable Status with the following possible returns: Enable/Disable.
+     - Get

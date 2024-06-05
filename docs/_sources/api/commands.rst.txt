@@ -1,0 +1,74 @@
+Commands
+========
+
+Please see Samples/:doc:`../python/commands/index` for usage examples
+
+Please note that when the table provides the link to the possible parameters of commands,
+the '\CrCommandId_' or '\CrCommandParam_' prefixes should not be used. It been removed from the code for the sake of simplicity.
+
+-------------------------------------------------------------------------------
+
+.. list-table::
+   :widths: 10 90 30
+   :header-rows: 1
+
+   * - Command Name
+     - Description
+     - Function on Camera Object
+   * - Release
+     - Release the shutter to shoot.
+     - shutter_down()/shutter_up()
+   * - MovieRecord
+     - Control the Movie Record Button.
+     - movie_record_down()/movie_record_up()
+   * - MediaFormat
+     - Formatting the media.
+     - media_format_slot1()/media_format_slot2()
+   * - MediaQuickFormat
+     - Quick formatting the media.
+     - media_quick_format_slot1()/media_quick_format_slot2()
+   * - CancelMediaFormat
+     - Cancel media format.
+     - cancel_media_format_down()/cancel_media_format_up()
+   * - S1andRelease
+     - Shutter half release and release to shoot.
+     - shutter_half_release_down()/shutter_half_release_up()
+   * - CancelContentsTransfer
+     - Cancel contents transfer.
+     - cancel_contents_transfer_down()/cancel_contents_transfer_up()
+   * - CameraSettingsReset
+     - Initialize the settings of the camera body.
+     - cancel_settings_reset()
+   * - APS_C_or_Full_Switching
+     - Switch the image sensor to APS-C or Full.
+     - apsc_or_full_down()/apsc_or_full_up()
+   * - MovieRecButtonToggle
+     - Control Movie Rec Button (2nd).
+     - movie_record_button_toggle_down()/movie_record_button_toggle_up()
+   * - CancelRemoteTouchOperation
+     - Cancel remote touch operation.
+     - cancel_remote_touch_operation_down()/cancel_remote_touch_operation_up()
+   * - PictureProfileReset
+     - Execute Picture Profile Reset.
+     - picture_profile_reset_down()/picture_profile_reset_up()
+   * - CreativeLookReset
+     - Execute Creative Look Reset.
+     - creative_look_reset_down()/creative_look_reset_up()
+   * - PixelMapping
+     - Execute Pixel Mapping.
+     - pixel_mapping()
+   * - TimeCodePresetReset
+     - Execute Timecode preset reset.
+     - timecode_preset_reset_down()/timecode_preset_reset_up()
+   * - UserBitPresetReset
+     - Execute User Bit Preset Reset.
+     - user_bit_preset_reset_down()/user_bit_preset_reset_up()
+   * - SensorCleaning
+     - Execute Sensor Cleaning.
+     - sensor_cleaning()
+   * - PowerOff
+     - Execute Poweroff.
+     - power_off()
+
+
+For full list of commands, see `function list <../_static/rcsdk_api.pdf#page=26>`_.

@@ -1,0 +1,27 @@
+Quick Start
+=================================
+
+The Quick start guide gives you the steps you need to quickly connect the camera to your PC and install the required software to start developing against the Python version of the SCR SDK.
+
+
+Step 1 - Connect the Camera to a PC using USB-C cable
++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.. image:: images/side-usb.png
+    :scale: 15
+
+Step 2 - Set PC Remote Function to On
++++++++++++++++++++++++++++++++++++++
+
+.. image:: images/back.png
+    :scale: 20
+
+Step 3 - Install the required libraries on Your PC
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+To use the Python version of the SDK, you need to install Python and the pip package manager. Please see :doc:`setup/software_installation` for details on installing this for your platform. 
+
+Step 4 - Run the Capture Image Sample
++++++++++++++++++++++++++++++++++++++
+
+Now that you have the required dependencies to try the samples. You can start with taking a picture. :doc:`python/helper-commands/capture-image` 

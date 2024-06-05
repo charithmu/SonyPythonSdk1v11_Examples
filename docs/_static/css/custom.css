@@ -1,0 +1,5 @@
+@import 'theme.css';
+
+html.writer-html5 .rst-content table.docutils td>p,html.writer-html5 .rst-content table.docutils th>p {
+    white-space: normal;
+}

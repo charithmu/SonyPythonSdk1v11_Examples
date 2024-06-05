@@ -1,0 +1,17 @@
+Overview
+========
+
+This library has been created to provide python bindings to the Sony Camera Remote SDK.
+
+The following documentation describes the steps required to install the software and start developing against the python library.
+
+Through-out the documentation we will have links back to the original Sony Camera remote API docuement to provide more detailed information.
+
+
+You can see full API overview `here <_static/rcsdk_api.pdf#page=23>`_.
+
+
+- All the commands currently implemented can be found under :doc:`../api/commands`.
+- All the properties currently implemented can be found under :doc:`../api/properties`.
+
+

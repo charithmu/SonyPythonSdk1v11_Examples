@@ -1,0 +1,45 @@
+Media Quick Format
+=====================
+
+The Media Quick Format command can be issued on a connected camera using the media_quick_format_slot1() and media_quick_format_slot2() methods. 
+
+In the Camera Remote SDK, the API call to issue a command for media quick format is `SendCommand <../../_static/rcsdk_api.pdf#page=109>`_ .
+
+Details about the Media Quick Format Command can be found at `MediaQuickFormat <../../_static/rcsdk_api.pdf#page=224>`_
+
+.. code-block:: python
+
+    import sony_cr
+    import io
+    import sys
+    import time
+
+    cm = sony_cr.CameraManager()
+
+    cameras = cm.find_cameras()
+
+    print("Found {} camera(s)".format(len(cameras)))
+    for i, cam in enumerate(cameras):
+        print("[{}]: {} {}".format(i+1, cam['model'], cam['id']))
+        
+    if len(cameras) == 0:
+        sys.exit(0)
+        
+    cam = cm.get_camera(cameras[0]['id'])
+
+    cam.connect()
+
+    cam.media_quick_format_slot1()
+    cam.media_quick_format_slot2()
+
+    time.sleep(2)
+
+
+Running the Sample
+++++++++++++++++++
+
+Copy the code snippet above into a file called media-quick-format.py and execute using the command:
+
+.. code-block:: console
+
+    python media-quick-format.py

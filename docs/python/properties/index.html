@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Properties &mdash; SCR SDK Python Documentation 1.11.0 (Beta)  documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Device Overheating State Property" href="DeviceOverheatingState.html" />
+    <link rel="prev" title="Power Off" href="../commands/power-off.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            SCR SDK Python Documentation 1.11.0 (Beta)
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../quick-start.html">Quick Start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../setup/software_installation.html">Software Installation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Downloads</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../downloads/downloads.html">Downloads</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../api/commands.html">Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/properties.html">Properties</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Samples</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../init-library.html">Initialise the Camera Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../helper-commands/index.html">Helper Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../commands/index.html">Commands</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Properties</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="DeviceOverheatingState.html">Device Overheating State Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LensVersionNumber.html">Lens Version Number Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SensorCleaningEnableStatus.html">Sensor Cleaning Enable Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UserBitPresetResetEnableStatus.html">User Bit Preset Reset Enable Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TimeCodePresetResetEnableStatus.html">Timecode Preset Reset Enable Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ProxyRecordingSetting.html">Proxy recording Setting Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CreativeLookResetEnableStatus.html">Creative Look ResetEnableStatus Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CreativeLook_CustomLook.html">Creative Look CustomLook Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CreativeLook_Clarity.html">Creative Look Clarity Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CreativeLook_SharpnessRange.html">Creative Look SharpnessRange Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CreativeLook_Saturation.html">Creative Look Saturation Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CreativeLook_Fade.html">Creative Look Fade Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CreativeLook_Shadows.html">Creative Look Shadows Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CreativeLook_Highlights.html">Creative Look Highlights Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CreativeLook_Contrast.html">Creative Look Contrast Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CreativeLook.html">Creative Look Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfileResetEnableStatus.html">Picture Profile Reset Enable Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_Copy.html">Picture Profile Copy Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_DetailAdjustHiLightDetail.html">Picture Profile Detail Adjust HiLight Detail Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_DetailAdjustCrispening.html">Picture Profile Detail Adjust Crispening Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_DetailAdjustLimit.html">Picture Profile Detail Adjust Limit Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_DetailAdjustBWBalance.html">Picture Profile Detail Adjust BW Balance Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_DetailAdjustVHBalance.html">Picture Profile Detail Adjust VH Balance Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_DetailAdjustMode.html">Picture Profile Detail Adjust Mode Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_DetailLevel.html">Picture Profile Detail Level Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_ColorDepthYellow.html">Picture Profile Color Depth Yellow Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_ColorDepthMagenta.html">Picture Profile Color Depth Magenta Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_ColorDepthCyan.html">Picture Profile Color Depth Cyan Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_ColorDepthBlue.html">Picture Profile Color Depth Blue Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_ColorDepthGreen.html">Picture Profile Color Depth Green Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_ColorDepthRed.html">Picture Profile Color Depth Red Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_ColorPhase.html">Picture Profile Color Phase Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_Saturation.html">Picture Profile Saturation Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_ColorMode.html">Picture Profile Color Mode Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_KneeManualSet_Slope.html">Picture Profile Knee Manual Set Slope Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_KneeManualSet_Point.html">Picture Profile Knee Manual Set Point Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_KneeAutoSet_Sensitivity.html">Picture Profile Knee Auto Set Sensitivity Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_KneeAutoSet_MaxPoint.html">Picture Profile Knee Auto Set Max Point Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_KneeMode.html">Picture Profile Knee Mode Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_BlackGammaLevel.html">Picture Profile Black Gamma Level Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_BlackGammaRange.html">Picture Profile Black Gamma Range Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_Gamma.html">Picture Profile Gamma Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile_BlackLevel.html">Picture Profile Black Level Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureProfile.html">Picture Profile Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ShutterType.html">Shutter Type Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SilentModeAutoPixelMapping.html">Silent Mode Auto Pixel Mapping Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SilentModeShutterWhenPowerOff.html">Silent Mode Shutter When Power Off In AF Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SilentModeApertureDriveInAF.html">Silent Mode Aperture Drive In AF Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SilentMode.html">Silent Mode Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Movie_ImageStabilizationSteadyShot.html">Movie_Image Stabilization Steady Shot Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ImageStabilizationSteadyShot.html">Image Stabilization Steady Shot Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UserBitTimeRec.html">User Bit Time Rec Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="UserBitPreset.html">User Bit Preset Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TimeCodeMake.html">Time Code Make Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TimeCodeRun.html">Time Code Run Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TimeCodeFormat.html">Time Code Format Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TimeCodePreset.html">Time Code Preset Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AudioInputMasterLevel.html">Audio Input Master Level Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AudioRecording.html">Audio Recording Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SQRecordingSetting.html">SQ Recording Setting Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SQRecordingFrameRateSetting.html">SQ Recording Frame Rate Setting Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SQFrameRate.html">SQ Frame Rate Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Movie_ProxyFileFormat.html">Movie Proxy File Format Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FocusBracketShootingStatus.html">Focus Bracket Shooting Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FocusBracketFocusRange.html">Focus Bracket Focus Range Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FocusBracketShotNumber.html">Focus Bracket Shot Number Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SoftwareVersion.html">Software Version Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RecorderControlProxySetting.html">Recorder Control Proxy Setting Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RemoteTouchOperation.html">Remote Touch Operation Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsoCurrentSensitivity.html">Iso Current Sensitivity Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ExposureCtrlType.html">Exposure Control Type Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ImageID_String.html">Image ID String Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ImageID_Num.html">Image ID(Numerical Value) Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DispModeSetting.html">Disp Mode Setting Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DispModeCandidate.html">Disp Mode Candidate Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GainControlSetting.html">Gain Control Setting Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ShutterModeSetting.html">Shutter Mode Setting Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IrisModeSetting.html">Iris Mode Setting Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ContentsTransferProgress.html">Contents Transfer Progress Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ContentsTransferCancelEnableStatus.html">Contents Transfer Cancel Enable Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Zoom_Bar_Information.html">Zoom Bar Information Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CustomWB_Capture_Frame_Size.html">Custom WB Capture Frame Size Area Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CustomWB_Capturable_Area.html">Custom WB Capturable Area Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Zoom_Scale.html">Zoom Scale Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Media_FormatProgressRate.html">Media SLOT1 Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT2_RemainingNumber.html">Media SLOT2 Remaining Number Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT2_RemainingTime.html">Media SLOT2 Remaining Time Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT1_RemainingNumber.html">Media SLOT1 Remaining Number Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT1_RemainingTime.html">Media SLOT1 Remaining Time Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SnapshotInfo.html">SnapshotInfo Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CustomWB_Capture.html">Custom WB Capture Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Focus_Magnifier_Setting.html">Focus Magnifier Setting Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ColorTuningGM.html">Color Tuning GM Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ColorTuningAB.html">Color Tuning AB Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Colortemp.html">Color Temperature Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="StillImageQuality.html">Still Image Quality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT1_ImageQuality.html">Media SLOT1 Image Quality Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT2_ImageQuality.html">Media SLOT2 Image Quality Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SdkControlMode.html">Sdk Control Mode Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FNumber.html">F-Number Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IsoSensitivity.html">ISO Sensitivity Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ShutterSpeed.html">Shutter Speed Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PriorityKeySettings.html">Position Key Setting Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ExposureProgramMode.html">Exposure Program Mode Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DriveMode.html">Still Capture Mode Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FocusMode.html">Focus Mode Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FocusArea.html">Focus Area Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LiveView_Image_Quality.html">Live View Image Quality Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LiveViewStatus.html">LiveView Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT1_FormatEnableStatus.html">Media SLOT1 Full Format Enable Status  Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT2_FormatEnableStatus.html">Media SLOT2 Full Format Enable Status  Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT1_QuickFormatEnableStatus.html">Media SLOT1 Quick Format Enable Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT2_QuickFormatEnableStatus.html">Media Format Progress Rate Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WhiteBalance.html">White Balance Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CustomWB_Capture_Standby.html">Custom WB Capture Standby Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CustomWB_Capture_Standby_Cancel.html">Custom WB Capture Standby Cancel  Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CustomWB_Capture_Operation.html">Custom WB Capture Operation Enable Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CustomWB_Execution_State.html">Custom WB Execution State Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Zoom_Operation_Status.html">Zoom Operation Enable Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Zoom_Setting.html">Zoom Setting Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Zoom_Type_Status.html">Zoom Type Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Zoom_Operation.html">Zoom Operation Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Zoom_Speed_Range.html">Zoom Speed Range Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ZoomAndFocusPosition_Save.html">Save Zoom&amp;FocusPosition in presets Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ZoomAndFocusPosition_Load.html">Load Zoom&amp;FocusPosition from presets Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Remocon_Zoom_Speed_Type.html">Remocon Zoom Speed Type Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FocusIndication.html">Focus Indication Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ContentsTransferStatus.html">Get content accessibility status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MeteringMode.html">Exposure Metering Mode Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FlashMode.html">Flash Mode Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BatteryLevel.html">Battery Level Indicator Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BatteryRemain.html">Battery Remaining Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ExposureBiasCompensation.html">Exposure Bias Compensation Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FlashCompensation.html">Flash Compensation Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DRO.html">Dynamic Range Optimizer Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AspectRatio.html">Aspect Ratio Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AEL.html">AELock Indication Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="S1.html">Shutter Half Release Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FEL.html">FEL Lock Indication Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AWBL.html">AWBLock Indication Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PictureEffect.html">Picture Effect Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="StillImageStoreDestination.html">Still Image Save Destination Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LiveViewDisplayEffect.html">Live View Display Effect Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Movie_File_Format.html">File Format(Movie) Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Interval_Rec_Mode.html">Interval REC Mode Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="WirelessFlash.html">Wireless Flash Setting Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RedEyeReduction.html">Red Eye Reduction Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Still_Image_Trans_Size.html">Still Image Trans Size Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RAW_J_PC_Save_Image.html">RAW+J PC Save Image Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CameraSetting_SaveOperationEnableStatus.html">Camera-Setting Save Operation Enable Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CameraSetting_ReadOperationEnableStatus.html">Camera-Setting Read Operation Enable Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CameraSettingsResetEnableStatus.html">Camera Setting Reset Enable Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CameraSetting_SaveRead_State.html">Camera-Setting Save/Read State Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CompressionFileFormatStill.html">Compress File Format(Still) Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT1_RAW_FileCompressionType.html">Media SLOT1 RAW File Compression Type Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT2_RAW_FileCompressionType.html">Media SLOT2 RAW File Compression Type Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT1_FileType.html">Media SLOT1 File Format(Still) Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT2_FileType.html">Media SLOT2 File Format(Still) Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT1_JpegQuality.html">Media SLOT1 JPEG Quality Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT2_JpegQuality.html">Media SLOT2 JPEG Quality Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Movie_Recording_FrameRateSetting.html">Recording Frame Rate Setting(Movie) Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT1_Status.html">Media SLOT1 Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT2_Status.html">Media SLOT2 Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT1_ImageSize.html">Media SLOT1 Image Size Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="MediaSLOT2_ImageSize.html">Media SLOT2 Image Size Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Cancel_Media_FormatEnableStatus.html">Cancel Media Format Enable Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="NearFar.html">Focus Near/Far Setting Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RecordingState.html">Movie Recording State Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Interval_Rec_Status.html">Interval REC Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="JpegQuality.html">JPEG Quality Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ImageSize.html">Image Size Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FileType.html">File Format(Still) Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RAW_FileCompressionType.html">RAW File Compression Type Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="FunctionOfRemoteTouchOperation.html">Function of Remote Touch Operation Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RemoteTouchOperationEnableStatus.html">Remote Touch Operation Enable Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CancelRemoteTouchOperationEnableStatus.html">Cancel Remote Touch Operation Enable Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Movie_Recording_Setting.html">Recording Setting(Movie) Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="TouchOperation.html">Touch Operation Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SelectFinder.html">Select Finder/Monitor Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AutoPowerOffTemperature.html">Auto Power OFF Temperature Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="BodyKeyLock.html">Body Key Lock Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="APS_C_or_Full_SwitchingSetting.html">APS-C or Full Switching Setting Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="APS_C_or_Full_SwitchingEnableStatus.html">APS-C or Full Switching Enable Status Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DispMode.html">Monitor DISP(Screen Display) Mode Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="PlaybackMedia.html">Playback Media Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ImageID_Num_Setting.html">Image ID(Numerical Value) Setting Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DateTime_Settings.html">Date/Time Setting Property</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AF_Area_Position.html">AF Area Position Property</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Release Notes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../release_notes/1.11.0.html">SDK Version 1.11.0</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">SCR SDK Python Documentation 1.11.0 (Beta)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Properties</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/python/properties/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="properties">
+<h1>Properties<a class="headerlink" href="#properties" title="Permalink to this headline"></a></h1>
+<table class="colwidths-given docutils align-default" id="id1">
+<caption><span class="caption-text">Properties</span><a class="headerlink" href="#id1" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 70%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Property Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>S1</p></td>
+<td><p><a class="reference internal" href="S1.html"><span class="doc">Shutter Half Release Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>AEL</p></td>
+<td><p><a class="reference internal" href="AEL.html"><span class="doc">AELock Indication Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>FEL</p></td>
+<td><p><a class="reference internal" href="FEL.html"><span class="doc">FEL Lock Indication Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>AWBL</p></td>
+<td><p><a class="reference internal" href="AWBL.html"><span class="doc">AWBLock Indication Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>FNumber</p></td>
+<td><p><a class="reference internal" href="FNumber.html"><span class="doc">F-Number Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>ExposureBiasCompensation</p></td>
+<td><p><a class="reference internal" href="ExposureBiasCompensation.html"><span class="doc">Exposure Bias Compensation Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>ShutterSpeed</p></td>
+<td><p><a class="reference internal" href="ShutterSpeed.html"><span class="doc">Shutter Speed Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>IsoSensitivity</p></td>
+<td><p><a class="reference internal" href="IsoSensitivity.html"><span class="doc">ISO Sensitivity Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>FocusArea</p></td>
+<td><p><a class="reference internal" href="FocusArea.html"><span class="doc">Focus Area Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>ExposureProgramMode</p></td>
+<td><p><a class="reference internal" href="ExposureProgramMode.html"><span class="doc">Exposure Program Mode Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>CompressionFileFormatStill</p></td>
+<td><p><a class="reference internal" href="CompressionFileFormatStill.html"><span class="doc">Compress File Format(Still) Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>FileType</p></td>
+<td><p><a class="reference internal" href="FileType.html"><span class="doc">File Format(Still) Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT1_FileType</p></td>
+<td><p><a class="reference internal" href="MediaSLOT1_FileType.html"><span class="doc">Media SLOT1 File Format(Still) Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>MediaSLOT2_FileType</p></td>
+<td><p><a class="reference internal" href="MediaSLOT2_FileType.html"><span class="doc">Media SLOT2 File Format(Still) Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>StillImageQuality</p></td>
+<td><p><a class="reference internal" href="StillImageQuality.html"><span class="doc">Still Image Quality</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>MediaSLOT1_ImageQuality</p></td>
+<td><p><a class="reference internal" href="MediaSLOT1_ImageQuality.html"><span class="doc">Media SLOT1 Image Quality Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT2_ImageQuality</p></td>
+<td><p><a class="reference internal" href="MediaSLOT2_ImageQuality.html"><span class="doc">Media SLOT2 Image Quality Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>WhiteBalance</p></td>
+<td><p><a class="reference internal" href="WhiteBalance.html"><span class="doc">White Balance Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>FocusMode</p></td>
+<td><p><a class="reference internal" href="FocusMode.html"><span class="doc">Focus Mode Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>MeteringMode</p></td>
+<td><p><a class="reference internal" href="MeteringMode.html"><span class="doc">Exposure Metering Mode Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>FlashMode</p></td>
+<td><p><a class="reference internal" href="FlashMode.html"><span class="doc">Flash Mode Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>FlashCompensation</p></td>
+<td><p><a class="reference internal" href="FlashCompensation.html"><span class="doc">Flash Compensation Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>WirelessFlash</p></td>
+<td><p><a class="reference internal" href="WirelessFlash.html"><span class="doc">Wireless Flash Setting Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>RedEyeReduction</p></td>
+<td><p><a class="reference internal" href="RedEyeReduction.html"><span class="doc">Red Eye Reduction Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>DriveMode</p></td>
+<td><p><a class="reference internal" href="DriveMode.html"><span class="doc">Still Capture Mode Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>DRO</p></td>
+<td><p><a class="reference internal" href="DRO.html"><span class="doc">Dynamic Range Optimizer Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>ImageSize</p></td>
+<td><p><a class="reference internal" href="ImageSize.html"><span class="doc">Image Size Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>MediaSLOT1_ImageSize</p></td>
+<td><p><a class="reference internal" href="MediaSLOT1_ImageSize.html"><span class="doc">Media SLOT1 Image Size Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT2_ImageSize</p></td>
+<td><p><a class="reference internal" href="MediaSLOT2_ImageSize.html"><span class="doc">Media SLOT2 Image Size Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>AspectRatio</p></td>
+<td><p><a class="reference internal" href="AspectRatio.html"><span class="doc">Aspect Ratio Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PictureEffect</p></td>
+<td><p><a class="reference internal" href="PictureEffect.html"><span class="doc">Picture Effect Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Colortemp</p></td>
+<td><p><a class="reference internal" href="Colortemp.html"><span class="doc">Color Temperature Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>ColorTuningAB</p></td>
+<td><p><a class="reference internal" href="ColorTuningAB.html"><span class="doc">Color Tuning AB Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>ColorTuningGM</p></td>
+<td><p><a class="reference internal" href="ColorTuningGM.html"><span class="doc">Color Tuning GM Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>LiveViewDisplayEffect</p></td>
+<td><p><a class="reference internal" href="LiveViewDisplayEffect.html"><span class="doc">Live View Display Effect Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>StillImageStoreDestination</p></td>
+<td><p><a class="reference internal" href="StillImageStoreDestination.html"><span class="doc">Still Image Save Destination Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PriorityKeySettings</p></td>
+<td><p><a class="reference internal" href="PriorityKeySettings.html"><span class="doc">Position Key Setting Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Focus_Magnifier_Setting</p></td>
+<td><p><a class="reference internal" href="Focus_Magnifier_Setting.html"><span class="doc">Focus Magnifier Setting Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>DateTime_Settings</p></td>
+<td><p><a class="reference internal" href="DateTime_Settings.html"><span class="doc">Date/Time Setting Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>NearFar</p></td>
+<td><p><a class="reference internal" href="NearFar.html"><span class="doc">Focus Near/Far Setting Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>LiveView_Image_Quality</p></td>
+<td><p><a class="reference internal" href="LiveView_Image_Quality.html"><span class="doc">Live View Image Quality Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Interval_Rec_Mode</p></td>
+<td><p><a class="reference internal" href="Interval_Rec_Mode.html"><span class="doc">Interval REC Mode Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Still_Image_Trans_Size</p></td>
+<td><p><a class="reference internal" href="Still_Image_Trans_Size.html"><span class="doc">Still Image Trans Size Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>RAW_J_PC_Save_Image</p></td>
+<td><p><a class="reference internal" href="RAW_J_PC_Save_Image.html"><span class="doc">RAW+J PC Save Image Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>CustomWB_Capture_Standby</p></td>
+<td><p><a class="reference internal" href="CustomWB_Capture_Standby.html"><span class="doc">Custom WB Capture Standby Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>CustomWB_Capture_Standby_Cancel</p></td>
+<td><p><a class="reference internal" href="CustomWB_Capture_Standby_Cancel.html"><span class="doc">Custom WB Capture Standby Cancel  Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>CustomWB_Capture</p></td>
+<td><p><a class="reference internal" href="CustomWB_Capture.html"><span class="doc">Custom WB Capture Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>SnapshotInfo</p></td>
+<td><p><a class="reference internal" href="SnapshotInfo.html"><span class="doc">SnapshotInfo Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>BatteryRemain</p></td>
+<td><p><a class="reference internal" href="BatteryRemain.html"><span class="doc">Battery Remaining Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>BatteryLevel</p></td>
+<td><p><a class="reference internal" href="BatteryLevel.html"><span class="doc">Battery Level Indicator Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>RecordingState</p></td>
+<td><p><a class="reference internal" href="RecordingState.html"><span class="doc">Movie Recording State Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>LiveViewStatus</p></td>
+<td><p><a class="reference internal" href="LiveViewStatus.html"><span class="doc">LiveView Status Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>FocusIndication</p></td>
+<td><p><a class="reference internal" href="FocusIndication.html"><span class="doc">Focus Indication Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>MediaSLOT1_Status</p></td>
+<td><p><a class="reference internal" href="MediaSLOT1_Status.html"><span class="doc">Media SLOT1 Status Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT1_RemainingNumber</p></td>
+<td><p><a class="reference internal" href="MediaSLOT1_RemainingNumber.html"><span class="doc">Media SLOT1 Remaining Number Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>MediaSLOT1_RemainingTime</p></td>
+<td><p><a class="reference internal" href="MediaSLOT1_RemainingTime.html"><span class="doc">Media SLOT1 Remaining Time Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT1_FormatEnableStatus</p></td>
+<td><p><a class="reference internal" href="MediaSLOT1_FormatEnableStatus.html"><span class="doc">Media SLOT1 Full Format Enable Status  Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>MediaSLOT1_QuickFormatEnableStatus</p></td>
+<td><p><a class="reference internal" href="MediaSLOT1_QuickFormatEnableStatus.html"><span class="doc">Media SLOT1 Quick Format Enable Status Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT2_Status</p></td>
+<td><p><a class="reference internal" href="MediaSLOT2_Status.html"><span class="doc">Media SLOT2 Status Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>MediaSLOT2_RemainingNumber</p></td>
+<td><p><a class="reference internal" href="MediaSLOT2_RemainingNumber.html"><span class="doc">Media SLOT2 Remaining Number Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT2_RemainingTime</p></td>
+<td><p><a class="reference internal" href="MediaSLOT2_RemainingTime.html"><span class="doc">Media SLOT2 Remaining Time Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>MediaSLOT2_FormatEnableStatus</p></td>
+<td><p><a class="reference internal" href="MediaSLOT2_FormatEnableStatus.html"><span class="doc">Media SLOT2 Full Format Enable Status  Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT2_QuickFormatEnableStatus</p></td>
+<td><p><a class="reference internal" href="MediaSLOT2_QuickFormatEnableStatus.html"><span class="doc">Media Format Progress Rate Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Media_FormatProgressRate</p></td>
+<td><p><a class="reference internal" href="Media_FormatProgressRate.html"><span class="doc">Media SLOT1 Status Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>AF_Area_Position</p></td>
+<td><p><a class="reference internal" href="AF_Area_Position.html"><span class="doc">AF Area Position Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Zoom_Scale</p></td>
+<td><p><a class="reference internal" href="Zoom_Scale.html"><span class="doc">Zoom Scale Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Zoom_Setting</p></td>
+<td><p><a class="reference internal" href="Zoom_Setting.html"><span class="doc">Zoom Setting Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Zoom_Operation</p></td>
+<td><p><a class="reference internal" href="Zoom_Operation.html"><span class="doc">Zoom Operation Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Movie_File_Format</p></td>
+<td><p><a class="reference internal" href="Movie_File_Format.html"><span class="doc">File Format(Movie) Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Movie_Recording_Setting</p></td>
+<td><p><a class="reference internal" href="Movie_Recording_Setting.html"><span class="doc">Recording Setting(Movie) Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Movie_Recording_FrameRateSetting</p></td>
+<td><p><a class="reference internal" href="Movie_Recording_FrameRateSetting.html"><span class="doc">Recording Frame Rate Setting(Movie) Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Interval_Rec_Status</p></td>
+<td><p><a class="reference internal" href="Interval_Rec_Status.html"><span class="doc">Interval REC Status Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>CustomWB_Execution_State</p></td>
+<td><p><a class="reference internal" href="CustomWB_Execution_State.html"><span class="doc">Custom WB Execution State Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>CustomWB_Capturable_Area</p></td>
+<td><p><a class="reference internal" href="CustomWB_Capturable_Area.html"><span class="doc">Custom WB Capturable Area Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>CustomWB_Capture_Frame_Size</p></td>
+<td><p><a class="reference internal" href="CustomWB_Capture_Frame_Size.html"><span class="doc">Custom WB Capture Frame Size Area Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>CustomWB_Capture_Operation</p></td>
+<td><p><a class="reference internal" href="CustomWB_Capture_Operation.html"><span class="doc">Custom WB Capture Operation Enable Status Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Zoom_Bar_Information</p></td>
+<td><p><a class="reference internal" href="Zoom_Bar_Information.html"><span class="doc">Zoom Bar Information Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Zoom_Type_Status</p></td>
+<td><p><a class="reference internal" href="Zoom_Type_Status.html"><span class="doc">Zoom Type Status Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>RAW_FileCompressionType</p></td>
+<td><p><a class="reference internal" href="RAW_FileCompressionType.html"><span class="doc">RAW File Compression Type Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>MediaSLOT1_RAW_FileCompressionType</p></td>
+<td><p><a class="reference internal" href="MediaSLOT1_RAW_FileCompressionType.html"><span class="doc">Media SLOT1 RAW File Compression Type Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT2_RAW_FileCompressionType</p></td>
+<td><p><a class="reference internal" href="MediaSLOT2_RAW_FileCompressionType.html"><span class="doc">Media SLOT2 RAW File Compression Type Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Cancel_Media_FormatEnableStatus</p></td>
+<td><p><a class="reference internal" href="Cancel_Media_FormatEnableStatus.html"><span class="doc">Cancel Media Format Enable Status Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>ZoomAndFocusPosition_Save</p></td>
+<td><p><a class="reference internal" href="ZoomAndFocusPosition_Save.html"><span class="doc">Save Zoom&amp;FocusPosition in presets Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>ZoomAndFocusPosition_Load</p></td>
+<td><p><a class="reference internal" href="ZoomAndFocusPosition_Load.html"><span class="doc">Load Zoom&amp;FocusPosition from presets Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Remocon_Zoom_Speed_Type</p></td>
+<td><p><a class="reference internal" href="Remocon_Zoom_Speed_Type.html"><span class="doc">Remocon Zoom Speed Type Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Zoom_Speed_Range</p></td>
+<td><p><a class="reference internal" href="Zoom_Speed_Range.html"><span class="doc">Zoom Speed Range Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>SdkControlMode</p></td>
+<td><p><a class="reference internal" href="SdkControlMode.html"><span class="doc">Sdk Control Mode Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>ContentsTransferStatus</p></td>
+<td><p><a class="reference internal" href="ContentsTransferStatus.html"><span class="doc">Get content accessibility status Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>ContentsTransferCancelEnableStatus</p></td>
+<td><p><a class="reference internal" href="ContentsTransferCancelEnableStatus.html"><span class="doc">Contents Transfer Cancel Enable Status Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>ContentsTransferProgress</p></td>
+<td><p><a class="reference internal" href="ContentsTransferProgress.html"><span class="doc">Contents Transfer Progress Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>IrisModeSetting</p></td>
+<td><p><a class="reference internal" href="IrisModeSetting.html"><span class="doc">Iris Mode Setting Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>ShutterModeSetting</p></td>
+<td><p><a class="reference internal" href="ShutterModeSetting.html"><span class="doc">Shutter Mode Setting Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>GainControlSetting</p></td>
+<td><p><a class="reference internal" href="GainControlSetting.html"><span class="doc">Gain Control Setting Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PlaybackMedia</p></td>
+<td><p><a class="reference internal" href="PlaybackMedia.html"><span class="doc">Playback Media Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>DispModeCandidate</p></td>
+<td><p><a class="reference internal" href="DispModeCandidate.html"><span class="doc">Disp Mode Candidate Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>DispModeSetting</p></td>
+<td><p><a class="reference internal" href="DispModeCandidate.html"><span class="doc">Disp Mode Candidate Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>DispMode</p></td>
+<td><p><a class="reference internal" href="DispMode.html"><span class="doc">Monitor DISP(Screen Display) Mode Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>TouchOperation</p></td>
+<td><p><a class="reference internal" href="TouchOperation.html"><span class="doc">Touch Operation Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>SelectFinder</p></td>
+<td><p><a class="reference internal" href="SelectFinder.html"><span class="doc">Select Finder/Monitor Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>AutoPowerOffTemperature</p></td>
+<td><p><a class="reference internal" href="AutoPowerOffTemperature.html"><span class="doc">Auto Power OFF Temperature Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>BodyKeyLock</p></td>
+<td><p><a class="reference internal" href="BodyKeyLock.html"><span class="doc">Body Key Lock Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>ImageID_Num_Setting</p></td>
+<td><p><a class="reference internal" href="ImageID_Num_Setting.html"><span class="doc">Image ID(Numerical Value) Setting Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>ImageID_Num</p></td>
+<td><p><a class="reference internal" href="ImageID_Num.html"><span class="doc">Image ID(Numerical Value) Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>ImageID_String</p></td>
+<td><p><a class="reference internal" href="ImageID_String.html"><span class="doc">Image ID String Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>ExposureCtrlType</p></td>
+<td><p><a class="reference internal" href="ExposureCtrlType.html"><span class="doc">Exposure Control Type Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>IsoCurrentSensitivity</p></td>
+<td><p><a class="reference internal" href="IsoCurrentSensitivity.html"><span class="doc">Iso Current Sensitivity Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>CameraSetting_SaveOperationEnableStatus</p></td>
+<td><p><a class="reference internal" href="CameraSetting_SaveOperationEnableStatus.html"><span class="doc">Camera-Setting Save Operation Enable Status Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>CameraSetting_ReadOperationEnableStatus</p></td>
+<td><p><a class="reference internal" href="CameraSetting_ReadOperationEnableStatus.html"><span class="doc">Camera-Setting Read Operation Enable Status Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>CameraSetting_SaveRead_State</p></td>
+<td><p><a class="reference internal" href="CameraSetting_SaveRead_State.html"><span class="doc">Camera-Setting Save/Read State Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>CameraSettingsResetEnableStatus</p></td>
+<td><p><a class="reference internal" href="CameraSettingsResetEnableStatus.html"><span class="doc">Camera Setting Reset Enable Status Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>APS_C_or_Full_SwitchingSetting</p></td>
+<td><p><a class="reference internal" href="APS_C_or_Full_SwitchingSetting.html"><span class="doc">APS-C or Full Switching Setting Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>APS_C_or_Full_SwitchingEnableStatus</p></td>
+<td><p><a class="reference internal" href="APS_C_or_Full_SwitchingEnableStatus.html"><span class="doc">APS-C or Full Switching Enable Status Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>RemoteTouchOperation</p></td>
+<td><p><a class="reference internal" href="RemoteTouchOperation.html"><span class="doc">Remote Touch Operation Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>RecorderControlProxySetting</p></td>
+<td><p><a class="reference internal" href="RecorderControlProxySetting.html"><span class="doc">Recorder Control Proxy Setting Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>SoftwareVersion</p></td>
+<td><p><a class="reference internal" href="SoftwareVersion.html"><span class="doc">Software Version Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>RemoteTouchOperationEnableStatus</p></td>
+<td><p><a class="reference internal" href="RemoteTouchOperationEnableStatus.html"><span class="doc">Remote Touch Operation Enable Status Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>CancelRemoteTouchOperationEnableStatus</p></td>
+<td><p><a class="reference internal" href="CancelRemoteTouchOperationEnableStatus.html"><span class="doc">Cancel Remote Touch Operation Enable Status Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>FocusBracketShotNumber</p></td>
+<td><p><a class="reference internal" href="FocusBracketShotNumber.html"><span class="doc">Focus Bracket Shot Number Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>FocusBracketFocusRange</p></td>
+<td><p><a class="reference internal" href="FocusBracketFocusRange.html"><span class="doc">Focus Bracket Focus Range Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>FocusBracketShootingStatus</p></td>
+<td><p><a class="reference internal" href="FocusBracketShootingStatus.html"><span class="doc">Focus Bracket Shooting Status Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>FunctionOfRemoteTouchOperation</p></td>
+<td><p><a class="reference internal" href="FunctionOfRemoteTouchOperation.html"><span class="doc">Function of Remote Touch Operation Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Movie_ProxyFileFormat</p></td>
+<td><p><a class="reference internal" href="Movie_ProxyFileFormat.html"><span class="doc">Movie Proxy File Format Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>SQFrameRate</p></td>
+<td><p><a class="reference internal" href="SQFrameRate.html"><span class="doc">SQ Frame Rate Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>SQRecordingFrameRateSetting</p></td>
+<td><p><a class="reference internal" href="SQRecordingFrameRateSetting.html"><span class="doc">SQ Recording Frame Rate Setting Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>SQRecordingSetting</p></td>
+<td><p><a class="reference internal" href="SQRecordingSetting.html"><span class="doc">SQ Recording Setting Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>AudioRecording</p></td>
+<td><p><a class="reference internal" href="AudioRecording.html"><span class="doc">Audio Recording Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>AudioInputMasterLevel</p></td>
+<td><p><a class="reference internal" href="AudioInputMasterLevel.html"><span class="doc">Audio Input Master Level Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>TimeCodePreset</p></td>
+<td><p><a class="reference internal" href="TimeCodePreset.html"><span class="doc">Time Code Preset Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>TimeCodeFormat</p></td>
+<td><p><a class="reference internal" href="TimeCodeFormat.html"><span class="doc">Time Code Format Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>TimeCodeRun</p></td>
+<td><p><a class="reference internal" href="TimeCodeRun.html"><span class="doc">Time Code Run Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>TimeCodeMake</p></td>
+<td><p><a class="reference internal" href="TimeCodeMake.html"><span class="doc">Time Code Make Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>UserBitPreset</p></td>
+<td><p><a class="reference internal" href="UserBitPreset.html"><span class="doc">User Bit Preset Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>UserBitTimeRec</p></td>
+<td><p><a class="reference internal" href="UserBitTimeRec.html"><span class="doc">User Bit Time Rec Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>ImageStabilizationSteadyShot</p></td>
+<td><p><a class="reference internal" href="ImageStabilizationSteadyShot.html"><span class="doc">Image Stabilization Steady Shot Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Movie_ImageStabilizationSteadyShot</p></td>
+<td><p><a class="reference internal" href="Movie_ImageStabilizationSteadyShot.html"><span class="doc">Movie_Image Stabilization Steady Shot Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>SilentMode</p></td>
+<td><p><a class="reference internal" href="SilentMode.html"><span class="doc">Silent Mode Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>SilentModeApertureDriveInAF</p></td>
+<td><p><a class="reference internal" href="SilentModeApertureDriveInAF.html"><span class="doc">Silent Mode Aperture Drive In AF Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>SilentModeShutterWhenPowerOff</p></td>
+<td><p><a class="reference internal" href="SilentModeShutterWhenPowerOff.html"><span class="doc">Silent Mode Shutter When Power Off In AF Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>SilentModeAutoPixelMapping</p></td>
+<td><p><a class="reference internal" href="SilentModeAutoPixelMapping.html"><span class="doc">Silent Mode Auto Pixel Mapping Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>ShutterType</p></td>
+<td><p><a class="reference internal" href="ShutterType.html"><span class="doc">Shutter Type Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PictureProfile</p></td>
+<td><p><a class="reference internal" href="PictureProfile.html"><span class="doc">Picture Profile Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PictureProfile_BlackLevel</p></td>
+<td><p><a class="reference internal" href="PictureProfile_BlackLevel.html"><span class="doc">Picture Profile Black Level Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PictureProfile_Gamma</p></td>
+<td><p><a class="reference internal" href="PictureProfile_Gamma.html"><span class="doc">Picture Profile Gamma Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PictureProfile_BlackGammaRange</p></td>
+<td><p><a class="reference internal" href="PictureProfile_BlackGammaRange.html"><span class="doc">Picture Profile Black Gamma Range Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PictureProfile_BlackGammaLevel</p></td>
+<td><p><a class="reference internal" href="PictureProfile_BlackGammaLevel.html"><span class="doc">Picture Profile Black Gamma Level Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PictureProfile_KneeMode</p></td>
+<td><p><a class="reference internal" href="PictureProfile_KneeMode.html"><span class="doc">Picture Profile Knee Mode Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PictureProfile_KneeAutoSet_MaxPoint</p></td>
+<td><p><a class="reference internal" href="PictureProfile_KneeAutoSet_MaxPoint.html"><span class="doc">Picture Profile Knee Auto Set Max Point Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PictureProfile_KneeAutoSet_Sensitivity</p></td>
+<td><p><a class="reference internal" href="PictureProfile_KneeAutoSet_Sensitivity.html"><span class="doc">Picture Profile Knee Auto Set Sensitivity Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PictureProfile_KneeManualSet_Point</p></td>
+<td><p><a class="reference internal" href="PictureProfile_KneeManualSet_Point.html"><span class="doc">Picture Profile Knee Manual Set Point Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PictureProfile_KneeManualSet_Slope</p></td>
+<td><p><a class="reference internal" href="PictureProfile_KneeManualSet_Slope.html"><span class="doc">Picture Profile Knee Manual Set Slope Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PictureProfile_ColorMode</p></td>
+<td><p><a class="reference internal" href="PictureProfile_ColorMode.html"><span class="doc">Picture Profile Color Mode Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PictureProfile_Saturation</p></td>
+<td><p><a class="reference internal" href="PictureProfile_Saturation.html"><span class="doc">Picture Profile Saturation Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PictureProfile_ColorPhase</p></td>
+<td><p><a class="reference internal" href="PictureProfile_ColorPhase.html"><span class="doc">Picture Profile Color Phase Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PictureProfile_ColorDepthRed</p></td>
+<td><p><a class="reference internal" href="PictureProfile_ColorDepthRed.html"><span class="doc">Picture Profile Color Depth Red Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PictureProfile_ColorDepthGreen</p></td>
+<td><p><a class="reference internal" href="PictureProfile_ColorDepthGreen.html"><span class="doc">Picture Profile Color Depth Green Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PictureProfile_ColorDepthBlue</p></td>
+<td><p><a class="reference internal" href="PictureProfile_ColorDepthBlue.html"><span class="doc">Picture Profile Color Depth Blue Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PictureProfile_ColorDepthCyan</p></td>
+<td><p><a class="reference internal" href="PictureProfile_ColorDepthCyan.html"><span class="doc">Picture Profile Color Depth Cyan Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PictureProfile_ColorDepthMagenta</p></td>
+<td><p><a class="reference internal" href="PictureProfile_ColorDepthMagenta.html"><span class="doc">Picture Profile Color Depth Magenta Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PictureProfile_ColorDepthYellow</p></td>
+<td><p><a class="reference internal" href="PictureProfile_ColorDepthYellow.html"><span class="doc">Picture Profile Color Depth Yellow Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PictureProfile_DetailLevel</p></td>
+<td><p><a class="reference internal" href="PictureProfile_DetailLevel.html"><span class="doc">Picture Profile Detail Level Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PictureProfile_DetailAdjustMode</p></td>
+<td><p><a class="reference internal" href="PictureProfile_DetailAdjustMode.html"><span class="doc">Picture Profile Detail Adjust Mode Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PictureProfile_DetailAdjustVHBalance</p></td>
+<td><p><a class="reference internal" href="PictureProfile_DetailAdjustVHBalance.html"><span class="doc">Picture Profile Detail Adjust VH Balance Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PictureProfile_DetailAdjustBWBalance</p></td>
+<td><p><a class="reference internal" href="PictureProfile_DetailAdjustBWBalance.html"><span class="doc">Picture Profile Detail Adjust BW Balance Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PictureProfile_DetailAdjustLimit</p></td>
+<td><p><a class="reference internal" href="PictureProfile_DetailAdjustLimit.html"><span class="doc">Picture Profile Detail Adjust Limit Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PictureProfile_DetailAdjustCrispening</p></td>
+<td><p><a class="reference internal" href="PictureProfile_DetailAdjustCrispening.html"><span class="doc">Picture Profile Detail Adjust Crispening Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PictureProfile_DetailAdjustHiLightDetail</p></td>
+<td><p><a class="reference internal" href="PictureProfile_DetailAdjustHiLightDetail.html"><span class="doc">Picture Profile Detail Adjust HiLight Detail Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>PictureProfile_Copy</p></td>
+<td><p><a class="reference internal" href="PictureProfile_Copy.html"><span class="doc">Picture Profile Copy Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>PictureProfileResetEnableStatus</p></td>
+<td><p><a class="reference internal" href="PictureProfileResetEnableStatus.html"><span class="doc">Picture Profile Reset Enable Status Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>CreativeLook</p></td>
+<td><p><a class="reference internal" href="CreativeLook.html"><span class="doc">Creative Look Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>CreativeLook_Contrast</p></td>
+<td><p><a class="reference internal" href="CreativeLook_Contrast.html"><span class="doc">Creative Look Contrast Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>CreativeLook_Highlights</p></td>
+<td><p><a class="reference internal" href="CreativeLook_Highlights.html"><span class="doc">Creative Look Highlights Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>CreativeLook_Shadows</p></td>
+<td><p><a class="reference internal" href="CreativeLook_Shadows.html"><span class="doc">Creative Look Shadows Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>CreativeLook_Fade</p></td>
+<td><p><a class="reference internal" href="CreativeLook_Fade.html"><span class="doc">Creative Look Fade Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>CreativeLook_Saturation</p></td>
+<td><p><a class="reference internal" href="CreativeLook_Saturation.html"><span class="doc">Creative Look Saturation Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>CreativeLook_SharpnessRange</p></td>
+<td><p><a class="reference internal" href="CreativeLook_SharpnessRange.html"><span class="doc">Creative Look SharpnessRange Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>CreativeLook_Clarity</p></td>
+<td><p><a class="reference internal" href="CreativeLook_Clarity.html"><span class="doc">Creative Look Clarity Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>CreativeLook_Clarity</p></td>
+<td><p><a class="reference internal" href="CreativeLook_Clarity.html"><span class="doc">Creative Look Clarity Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>CreativeLook_CustomLook</p></td>
+<td><p><a class="reference internal" href="CreativeLook_CustomLook.html"><span class="doc">Creative Look CustomLook Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>CreativeLookResetEnableStatus</p></td>
+<td><p><a class="reference internal" href="CreativeLookResetEnableStatus.html"><span class="doc">Creative Look ResetEnableStatus Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>ProxyRecordingSetting</p></td>
+<td><p><a class="reference internal" href="ProxyRecordingSetting.html"><span class="doc">Proxy recording Setting Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>TimeCodePresetResetEnableStatus</p></td>
+<td><p><a class="reference internal" href="TimeCodePresetResetEnableStatus.html"><span class="doc">Timecode Preset Reset Enable Status Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>UserBitPresetResetEnableStatus</p></td>
+<td><p><a class="reference internal" href="UserBitPresetResetEnableStatus.html"><span class="doc">User Bit Preset Reset Enable Status Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>SensorCleaningEnableStatus</p></td>
+<td><p><a class="reference internal" href="SensorCleaningEnableStatus.html"><span class="doc">Sensor Cleaning Enable Status Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>LensVersionNumber</p></td>
+<td><p><a class="reference internal" href="LensVersionNumber.html"><span class="doc">Lens Version Number Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>DeviceOverheatingState</p></td>
+<td><p><a class="reference internal" href="DeviceOverheatingState.html"><span class="doc">Device Overheating State Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>JpegQuality</p></td>
+<td><p><a class="reference internal" href="JpegQuality.html"><span class="doc">JPEG Quality Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>MediaSLOT1_JpegQuality</p></td>
+<td><p><a class="reference internal" href="MediaSLOT1_JpegQuality.html"><span class="doc">Media SLOT1 JPEG Quality Property</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>MediaSLOT2_JpegQuality</p></td>
+<td><p><a class="reference internal" href="MediaSLOT2_JpegQuality.html"><span class="doc">Media SLOT2 JPEG Quality Property</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Zoom_Operation_Status</p></td>
+<td><p><a class="reference internal" href="Zoom_Operation_Status.html"><span class="doc">Zoom Operation Enable Status Property</span></a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../commands/power-off.html" class="btn btn-neutral float-left" title="Power Off" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="DeviceOverheatingState.html" class="btn btn-neutral float-right" title="Device Overheating State Property" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Sony Europe B.V.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

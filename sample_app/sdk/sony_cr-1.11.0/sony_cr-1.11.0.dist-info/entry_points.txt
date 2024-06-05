@@ -1,0 +1,3 @@
+[console_scripts]
+sony_cr = sony_cr.cli:main
+

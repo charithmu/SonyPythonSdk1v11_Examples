@@ -1,0 +1,16 @@
+SDK Version 1.11.0
+==================
+
+Notes for SDK Ver 1.11.00 Release
+---------------------------------
+
+Main changes:
+
+Added support for ILX-LR1, BURANO(MPC-2610).
+
+Added new monitoring function for BURANO(MPC-2610).
+For details, please refer to API references.
+
+Please check `the api pdf <../_static/rcsdk_api.pdf#page=4>`_ for more details.
+
+

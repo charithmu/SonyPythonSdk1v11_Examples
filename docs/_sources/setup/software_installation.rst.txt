@@ -1,0 +1,97 @@
+Software Installation
+=====================
+
+This page will guide you through the setup for adding the sony_cr library to your python project.
+
+For setting up the camera and environment, please read through the `Environment Setup <../_static/rcsdk_api.pdf#page=14>`_ in the API doc.
+
+---------------------------------------------------------
+
+
+Windows
++++++++
+
+Before setup, please make sure you have `Python3 <https://www.python.org/downloads/>`_ installed.
+For this software, we recommend 3.11 but other versions will also work.
+
+1. If you don't have `pip <https://pip.pypa.io/en/stable/>`_ installed, please see its documentation for how to install `here <https://pip.pypa.io/en/stable/installation/>`_.
+
+2. Install drivers for sony cameras. See :doc:`/downloads/downloads`.
+
+3. To run the gui sample code, create a new virtual environment and activate it:
+
+.. code-block:: console
+
+    python -m virtualenv venvs\build
+
+.. code-block:: console
+
+    venvs\build\Scripts\activate
+
+4. Next, use pip install with the appropriate wheel file for your version (with wheel file inside project folder):
+
+.. code-block:: console
+
+    pip install .\sony_cr-1.7.0-cp311-cp311-win_amd64.whl
+
+
+All the wheel files can be found in :doc:`/downloads/downloads`
+
+
+|
+
+---------------------------------------------------------
+
+Ubuntu
+++++++
+
+Ubuntu has Python 3 pre-installed however, to make sure that versions are up to date:
+
+.. code-block:: console
+
+    sudo apt update
+
+
+Now upgrade any packages that are not up to date:
+
+.. code-block:: console
+
+    sudo apt -y upgrade
+
+To install the python version of the SDK, you need to install the package manger pip:
+
+.. code-block:: console
+
+    sudo apt install -y python3-pip
+
+At this point you could install the python SDK, however we recommnd that you install virtual environments to isolate dependencies for different projects:
+
+.. code-block:: console
+
+    sudo apt install -y python3-venv
+
+Now create a directory for your projects. In this project directory, create a virtual environment by running the following command (.venv can be any name you want):
+
+.. code-block:: console
+ 
+    python3 -m venv .venv
+
+To activate the virtual environment use the following command:
+
+.. code-block:: console
+ 
+   source .venv/bin/activate
+
+
+Using pip install the python version of the SDK:
+
+.. code-block:: console
+
+    pip3 install sony_cr-1.8.0-cp38-cp38-linux_x86_64.whl
+
+Finnally copy the Camera Remote SDK libraries to /usr/bin
+
+.. code-block:: console
+
+    sudo cp -r CrAdapter libCr_Core.so /usr/bin/
+    

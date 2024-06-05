@@ -1,0 +1,45 @@
+Picture Profile Reset
+=====================
+
+The Picture Profile Reset command can be issued on a connected camera using the picture_profile_reset_down() and picture_profile_reset_up() methods. 
+
+In the Camera Remote SDK, the API call to issue a command for picture profile reset is `SendCommand <../../_static/rcsdk_api.pdf#page=109>`_ .
+
+Details about the Picture Profile Reset can be found at `PictureProfileReset <../../_static/rcsdk_api.pdf#page=228>`_
+
+.. code-block:: python
+
+    import sony_cr
+    import io
+    import sys
+    import time
+
+    cm = sony_cr.CameraManager()
+
+    cameras = cm.find_cameras()
+
+    print("Found {} camera(s)".format(len(cameras)))
+    for i, cam in enumerate(cameras):
+        print("[{}]: {} {}".format(i+1, cam['model'], cam['id']))
+        
+    if len(cameras) == 0:
+        sys.exit(0)
+        
+    cam = cm.get_camera(cameras[0]['id'])
+
+    cam.connect()
+
+    cam.picture_profile_reset_down()
+    cam.picture_profile_reset_up()
+
+    time.sleep(2)
+
+
+Running the Sample
+++++++++++++++++++
+
+Copy the code snippet above into a file called picture-profile-reset.py and execute using the command:
+
+.. code-block:: console
+
+    python picture-profile-reset.py
